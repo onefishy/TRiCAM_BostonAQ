@@ -43,16 +43,19 @@ The goal of our midterm deliverable consist of two parts. One is to complete an 
 <a name="Data"></a>
 ### V. Data Sources
 We will gather our data from various governmental and nongovernmental institutions. These may consist of but are not limited to:
-Air quality data from the Environmental Protection Agency (EPA)
-Boston area traffic data from the Google Maps API
-Topological data from Harvard’s Center for Geographical Analysis (CGA)
-Bike lane and road design data from massGIS, bostonGIS and/or arcGIS
-Boston area green space data on NASA’s normalized difference vegetation index (NDVI)
-Weather data from National Oceanic and Atmospheric Administration (NOAA) 
-MBTA public transit route data and schedules
-If time permits, we will also gather:
-Twitter data to extrapolate allergy hotspots
-Data on population movement within Boston
+
+
+- Air quality data from the Environmental Protection Agency (EPA)
+- Boston area traffic data from the Google Maps API
+- Topological data from Harvard’s Center for Geographical Analysis (CGA)
+- Bike lane and road design data from massGIS, bostonGIS and/or arcGIS
+- Boston area green space data on NASA’s normalized difference vegetation index (NDVI)
+- Weather data from National Oceanic and Atmospheric Administration (NOAA) 
+- MBTA public transit route data and schedules
+- If time permits, we will also gather:
+- Twitter data to extrapolate allergy hotspots
+- Data on population movement within Boston
+
 
 <a name="Computational"></a>
 ### VI. Computational Resources
