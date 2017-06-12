@@ -52,7 +52,7 @@ We will gather our data from various governmental and nongovernmental institutio
 - Boston area green space data on NASA’s normalized difference vegetation index (NDVI)
 - Weather data from National Oceanic and Atmospheric Administration (NOAA) 
 - MBTA public transit route data and schedules
-- If time permits, we will also gather:
+If time permits, we will also gather:
 - Twitter data to extrapolate allergy hotspots
 - Data on population movement within Boston
 
@@ -60,11 +60,12 @@ We will gather our data from various governmental and nongovernmental institutio
 <a name="Computational"></a>
 ### VI. Computational Resources
 We will conduct our data exploration and research with IPython 3 and Jupyter Notebook.
-SciPy, scikit-learn for modeling, and Matplotlib for static visualization
-Land use regression, linear regression, optimization in Python
-For our web application’s interface we will use D3, CSS and HTML
-Through Amazon Web Services we will use cloud computing to store and process data
-We will use GitHub for project collaboration, organization, and for file backup
+
+- SciPy, scikit-learn for modeling, and Matplotlib for static visualization
+- Land use regression, linear regression, optimization in Python
+- D3, CSS and HTML for our web application’s interface we will use
+- Amazon Web Services for cloud computing to store and process data
+- GitHub for project collaboration, organization, and file backup
 
 <a name="Timeline"></a>
 ### VII. Timeline
