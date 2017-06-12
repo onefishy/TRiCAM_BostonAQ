@@ -9,11 +9,17 @@
 **Table of Contents:**
 
 [I. Abstract](#I.-Abstract)
+
 [II. Intro](#II.-Intro)
+
 [III. Problem Statement and Methods](#III.-Problem-Statement-and-Methods)
+
 [IV. Deliverables](#IV.-Deliverables)
+
 [V. Data Sources](#VI.-Data-Sources)
+
 [VI. Computational Resources](#VI.-Computational-Resources)
+
 [VII. Timeline](#VII.-Timeline)
 
 
