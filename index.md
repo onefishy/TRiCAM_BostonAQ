@@ -1,8 +1,9 @@
 # TRiCAM_BostonAQ
 
 ## Team Air Quality Work Statement
-** Biyonka Liang, Annamira O’Toole, Anthony DePinho, Kaela Nelson, Tara Ippolito**
-** June 9th, 2017 **
+
+**Biyonka Liang, Annamira O’Toole, Anthony DePinho, Kaela Nelson, Tara Ippolito**
+**June 9th, 2017**
  
 ### I.  Abstract
 Air pollution and the monitoring of air quality levels is a significant concern for urban and suburban settings. The wide range of personal, industrial, and natural activities that take place in an urban space contribute to the air pollution in their own way. Several key pollutants are released in varying concentrations and, though chemically and physically diverse, all pose significant health concerns for residents in urban centers. Thus, this project will be driven primarily by widespread collection of data, application of advanced statistical models, and a number of computational mathematics techniques to provide an interface that will both enhance the quality of urban life in Boston and be accessible to all people, regardless of academic background.  The acquisition of data for this project will span various sources in the greater Boston area that pertain to air quality and its intersection with urban living, primarily transportation, land use, and weather, in addition to data on the air pollutants themselves. Our plan for our final deliverable is an accessible demonstration of the results of this rigorous modeling that can help city residents make more informed decisions on how to live a cleaner life, with a particular emphasis on aiding people potentially more vulnerable to air pollution, such as people with respiratory illnesses or allergies, pedestrians, and cyclists.
