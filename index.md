@@ -2,7 +2,11 @@
 
 ## Team Air Quality Work Statement
 
-**Biyonka Liang, Annamira O’Toole, Anthony DePinho, Kaela Nelson, Tara Ippolito**
+**Team Members: Anthony DePinho, Tara Ippolito, Biyonka Liang, Kaela Nelson, Annamira O’Toole**
+
+**Postdoc Adviser: Weiwei Pan**
+
+**Sponsor: Gary Adamkiewicz, Pavlos Protopapas**
 
 **June 9th, 2017**
 
