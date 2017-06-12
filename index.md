@@ -1,7 +1,7 @@
 # TRiCAM_BostonAQ
 
 ## Team Air Quality Work Statement
-### Biyonka Liang, Annamira O’Toole, Anthony DePinho, Kaela Nelson, Tara Ippolito
+#### Biyonka Liang, Annamira O’Toole, Anthony DePinho, Kaela Nelson, Tara Ippolito
 #### June 9th, 2017
  
 ### I.  Abstract
