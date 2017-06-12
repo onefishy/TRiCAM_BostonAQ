@@ -1,8 +1,8 @@
 # TRiCAM_BostonAQ
 
 ## Team Air Quality Work Statement
-#### Biyonka Liang, Annamira O’Toole, Anthony DePinho, Kaela Nelson, Tara Ippolito
-#### June 9th, 2017
+** Biyonka Liang, Annamira O’Toole, Anthony DePinho, Kaela Nelson, Tara Ippolito
+ June 9th, 2017 **
  
 ### I.  Abstract
 Air pollution and the monitoring of air quality levels is a significant concern for urban and suburban settings. The wide range of personal, industrial, and natural activities that take place in an urban space contribute to the air pollution in their own way. Several key pollutants are released in varying concentrations and, though chemically and physically diverse, all pose significant health concerns for residents in urban centers. Thus, this project will be driven primarily by widespread collection of data, application of advanced statistical models, and a number of computational mathematics techniques to provide an interface that will both enhance the quality of urban life in Boston and be accessible to all people, regardless of academic background.  The acquisition of data for this project will span various sources in the greater Boston area that pertain to air quality and its intersection with urban living, primarily transportation, land use, and weather, in addition to data on the air pollutants themselves. Our plan for our final deliverable is an accessible demonstration of the results of this rigorous modeling that can help city residents make more informed decisions on how to live a cleaner life, with a particular emphasis on aiding people potentially more vulnerable to air pollution, such as people with respiratory illnesses or allergies, pedestrians, and cyclists.
@@ -42,11 +42,11 @@ We will use GitHub for project collaboration, organization, and for file backup
  
 ### VI. Timeline
  
-Week 1: Learning the Basics
+**Week 1:** Learning the Basics
 Building foundation in data science, statistical modeling, Python and time series analysis
 Met with Gary to discuss details and general plan for project
  
-Week 2: Data Collection and Learning Advanced Models
+**Week 2:** Data Collection and Learning Advanced Models
 Workshop in D3.js and git earlier in the week
 Set up Amazon AWS
 Workshop in advanced statistical models later in week
@@ -54,13 +54,13 @@ Theoretically understanding the models we intend to use
 Gather preliminary data, in every aspect. In general order of priority: MBTA (Anthony), land use (Kaela), green space (Tara), traffic (Biyonka), GIS for bike lane data (Tara), weather data (Annamira)
 Wishlist: recollect air quality data, building height, population data, twitter data for allergen data, topography
  
-Week 3: Implementation Preparation
+**Week 3:** Implementation Preparation
 Run some simple models, such as land use regression
 Design interface
 PDF mockup of every single click and animation 
 Meeting with Gary and adjust plan
  
-Week 4-6: Implementation of Advanced Models and Interface
+**Week 4-6:** Implementation of Advanced Models and Interface
 Start running advanced statistical models on data
 Additional reading if needed
 Report back to Gary a geographical cost analysis to suggest sensor placement
