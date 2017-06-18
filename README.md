@@ -1,2 +1,0 @@
-# TRiCAM_BostonAQ
-# Quality
