@@ -81,13 +81,13 @@ df = pd.DataFrame(data=d)
 scrape will scrape the HTML table from this URL: http://www.massdot.state.ma.us/highway/TrafficTravelResources/TrafficInformationMap/RealTimeTraffic.aspx
 into lxml format. It will then convert the HTML table of traffic data into a pandas dataframe using the grab_data function
 
-input parameters: a string to be used as the column title for the data frame
+input parameters: a string (e.g. a date) to be used as the headers for the data frame
 
 output parameters: pandas Data Frame with two columns: one for travel time at the current moment in time, and one for travel speed at the current moment in time
 '''
 
 
-def scrape(string):
+def scrape(date):
     #Open page and parse UTML
     page = urllib.request.urlopen('http://www.massdot.state.ma.us/highway/TrafficTravelResources/TrafficInformationMap/RealTimeTraffic.aspx').read()
     soup = BeautifulSoup(page, "lxml")
@@ -100,8 +100,8 @@ def scrape(string):
     travel = []
     grab_data(speed, travel)
     
-    d = {"Travel Time at "+string: travel,
-     "Speed at " + string: speed}
+    d = {"Travel Time at "+date: travel,
+     "Speed at " + date: speed}
     scraped_df = pd.DataFrame(data=d)
     return scraped_df
 
@@ -125,8 +125,8 @@ while time_not_expired:
     #picks out minute part of the datetime element
     if hr != current_hr:
         #scrape when an hour has passed
-        print (datetime.datetime.now().strftime("%d-%m-%y %H:")+str(current))
-        new_df = scrape(datetime.datetime.now().strftime("%d-%m-%y %H:")+str(current))
+        print (datetime.datetime.now().strftime("%d-%m-%y")+str(current_hr))
+        new_df = scrape(datetime.datetime.now().strftime("%d-%m-%y")+str(current_hr))
         df = df.join(new_df)
         hr = current_hr
     if current_day == (initial_day + 1):
