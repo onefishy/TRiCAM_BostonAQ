@@ -100,7 +100,7 @@ def scrape(date):
     travel = []
     grab_data(speed, travel)
     
-    d = {"Travel Time at "+date: travel,
+    d = {"Travel Time at "+ date: travel,
      "Speed at " + date: speed}
     scraped_df = pd.DataFrame(data=d)
     return scraped_df
@@ -125,8 +125,8 @@ while time_not_expired:
     #picks out minute part of the datetime element
     if hr != current_hr:
         #scrape when an hour has passed
-        print (datetime.datetime.now().strftime("%d-%m-%y")+str(current_hr))
-        new_df = scrape(datetime.datetime.now().strftime("%d-%m-%y")+str(current_hr))
+        print (datetime.datetime.now().strftime("%d-%m-%y")+" "+str(current_hr))
+        new_df = scrape(datetime.datetime.now().strftime("%d-%m-%y ")+" "+str(current_hr))
         df = df.join(new_df)
         hr = current_hr
     if current_day == (initial_day + 1):
