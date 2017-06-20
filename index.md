@@ -123,6 +123,6 @@ If time permits, we will also gather:
  
 <a name="Code"></a>
 ### VIII. Code and Data
-https://github.com/onefishy/TRiCAM_BostonAQ
+[Code Repository](https://github.com/onefishy/TRiCAM_BostonAQ)
 
-https://github.com/onefishy/TRiCAM_BostonAQ/outline.html
+[Interface in Progress](https://github.com/onefishy/TRiCAM_BostonAQ/outline.html)
