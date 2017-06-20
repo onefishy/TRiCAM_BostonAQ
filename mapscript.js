@@ -1,5 +1,6 @@
-	var width = 700,
-        height = 580;
+
+	var width = 800,
+        height = 600;
 
     var svg = d3.select('#map')
       .append('svg')
@@ -23,3 +24,5 @@
       .append('path')
       .attr('fill', '#ccc')
       .attr('d', geoPath);
+	  
+	 console.log('loaded')
