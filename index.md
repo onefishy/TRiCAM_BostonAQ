@@ -124,5 +124,3 @@ If time permits, we will also gather:
 <a name="Code"></a>
 ### VIII. Code and Data
 [Code Repository](https://github.com/onefishy/TRiCAM_BostonAQ)
-
-[Interface in Progress](https://github.com/onefishy/TRiCAM_BostonAQ/outline.html)
