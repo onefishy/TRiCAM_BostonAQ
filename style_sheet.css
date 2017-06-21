@@ -1,0 +1,87 @@
+.body {
+	font: 12 px Arial;
+}
+
+
+#map {
+	position: absolute;
+	top: 0;
+	float: right;
+	left: 0;
+	bottom: 50px; /* Set this to the height of the footer */
+	right: 300px; /* Set this to the width of the nav bar */
+	background-color: #FBFBFB;
+	z-index: 2;
+
+}
+
+#side_bar {	
+	opacity: .3;
+	width: 300px;
+	position: absolute; 
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+	background: #A9A9A9; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */	
+		}
+
+
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	right: 230px; /* Set this to the width of the nav bar */
+	left: 0;
+	width: 100%;
+	height: 50px; 
+	overflow: hidden; /* Disables scrollbars on the header frame. To enable scrollbars, change "hidden" to "scroll" */
+	background: #69C5D3;
+	z-index: 4;
+}
+
+#info {
+	opacity: 1;
+	width: 200px;
+	height: 300px;
+	right: 50;
+	align-content: center;
+	top: 10px;
+	background: #D9DEE1;
+	background: co;
+	position: absolute; 
+	z-index: 5;
+#E0E0E0#515151}
+
+
+button {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+	border-radius: 4px;
+	opacity: 1;
+}
+
+#advanced {
+	margin-left: 11;
+	margin-top: 10;
+    padding: 15px 32px;
+	background-color: white;
+    color: black;
+    border: 2px solid #C1E4F7;}
+
+#tour {
+	margin-left: 11;
+	margin-top: 10;
+    padding: 15px 46px;
+	background-color: white;
+    color: black;
+    border: 2px solid #C1E4F7;}
+
+#logo {
+	padding-top: 25px;
+	padding-left: 36px;
+	width:128px;
+	height:128px;
+}
