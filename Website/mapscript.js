@@ -1,6 +1,6 @@
 
-	var width = 800,
-        height = 600;
+	var width = 1000,
+        height = 800;
 
     var svg = d3.select('#map')
       .append('svg')
@@ -22,7 +22,18 @@
       .data(neighborhoods_json.features)
       .enter()
       .append('path')
-      .attr('fill', '#ccc')
+      .attr( "fill", "#E0E0E0" )
+      .attr( "stroke", "#333")
       .attr('d', geoPath);
 	  
-	 console.log('loaded')
+	var rodents = svg.append( "g" );
+
+	rodents.selectAll( "path" )
+		.data( rodents_json.features )
+		.enter()
+		.append( "path" )
+		.attr( "fill", "#FF8906" )
+		.attr( "stroke", "#515151" )
+		.attr( "d", geoPath );
+
+ console.log('loaded')

@@ -1,0 +1,415 @@
+﻿<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Ben Smith, Executive Office of Energy and Environmental Affairs, GIS Analyst / DBA, Protected &amp; Recreational Open Space Program</origin>
+        <pubdate>20140815</pubdate>
+        <title>Protected and Recreational OpenSpace (Polygons)</title>
+        <geoform>vector digital data</geoform>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>The protected and recreational open space datalayer contains the boundaries of conservation lands and outdoor recreational facilities in Massachusetts. The associated database contains relevant information about each parcel, including ownership, level of protection, public accessibility, assessor’s map and lot numbers, and related legal interests held on the land, including conservation restrictions. Conservation and outdoor recreational facilities owned by federal, state, county, municipal, and nonprofit enterprises are included in this datalayer. Not all lands in this layer are protected in perpetuity, though nearly all have at least some level of protection.Although the initial data collection effort for this data layer has been completed, open space changes continually and this data layer is therefore considered to be under development. Additionally, due to the collaborative nature of this data collection effort, the accuracy and completeness of open space data varies across the state’s municipalities. Attributes, while comprehensive in scope, may be incomplete for many parcels.The OpenSpace layer includes two feature classes:OPENSPACE_POLY - polygons of recreational and conservation lands as described aboveOPENSPACE_ARC - attributed lines that represent boundaries of the polygonsThese feature classes are stored in an ArcSDE feature dataset named OPENSPACE that includes ArcGIS geodatabase topology. OPENSPACE_POLY - The following types of land are included in this datalayer:conservation land- habitat protection with minimal recreation, such as walking trails recreation land- outdoor facilities such as town parks, commons, playing fields, school fields, golf courses, bike paths, scout camps, and fish and game clubs. These may be privately or publicly owned facilities. town forests parkways - green buffers along roads, if they are a recognized conservation resource agricultural land- land protected under an Agricultural Preservation Restriction (APR) and administered by the state Department of Agricultural Resources (DAR, formerly the Dept. of Food and Agriculture (DFA)) aquifer protection land - not zoning overlay districts watershed protection land - not zoning overlay districts cemeteries - if a recognized conservation or recreation resourceforest land -- if designated as a Forest Legacy Area</abstract>
+      <purpose>Planning and analysis</purpose>
+    </descript>
+    <status>
+      <progress>In work</progress>
+      <update>Continually</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-73.539454</westbc>
+        <eastbc>-69.898861</eastbc>
+        <northbc>42.887695</northbc>
+        <southbc>41.224866</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Categories</themekt>
+        <themekey>environment</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>open space</themekey>
+        <themekey>conservation</themekey>
+        <themekey>recreation</themekey>
+        <themekey>parks</themekey>
+      </theme>
+    </keywords>
+    <accconst>None</accconst>
+    <useconst>These data are very useful for most statewide and regional planning purposes. However, they are not a legal record of ownership, and the user should understand that parcel representations are generally not based on property surveys.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Executive Office of Energy and Environmental Affairs</cntorg>
+          <cntper>Ben Smith</cntper>
+        </cntorgp>
+        <cntpos>GIS Analyst / DBA, Protected &amp; Recreational Open Space Program</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>251 Causeway Street, 5th Floor</address>
+          <city>Boston</city>
+          <state>MA</state>
+          <postal>02114</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>(617) 626-1076</cntvoice>
+        <cntfax>(617) 626-1249</cntfax>
+        <cntemail>benjamin.smith@state.ma.us</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <datacred>MassGIS, Executive Office of Energy and Environmental Affairs</datacred>
+    <native>Microsoft Windows Server 2008 R2 Version 6.1 (Build 7600) ; Esri ArcGIS 10.2.1.3497</native>
+  </idinfo>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>GT-polygon composed of chains</sdtstype>
+        <ptvctcnt>48586</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <planar>
+        <mapproj>
+          <mapprojn>NAD 1983 StatePlane Massachusetts Mainland FIPS 2001</mapprojn>
+          <lambertc>
+            <stdparll>41.71666666666667</stdparll>
+            <stdparll>42.68333333333333</stdparll>
+            <longcm>-71.5</longcm>
+            <latprjo>41.0</latprjo>
+            <feast>200000.0</feast>
+            <fnorth>750000.0</fnorth>
+          </lambertc>
+        </mapproj>
+        <planci>
+          <plance>coordinate pair</plance>
+          <coordrep>
+            <absres>0.0001</absres>
+            <ordres>0.0001</ordres>
+          </coordrep>
+          <plandu>meter</plandu>
+        </planci>
+      </planar>
+      <geodetic>
+        <horizdn>D North American 1983</horizdn>
+        <ellips>GRS 1980</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257222101</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>OPENSPACE_POLY</enttypl>
+        <enttypd>See http://www.mass.gov/itd/osp for complete list of attribute codes and descriptions</enttypd>
+      </enttyp>
+      <attr>
+        <attrlabl>OBJECTID</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>TOWN_ID</attrlabl>
+        <attrdef>Official municipality ID designated by Secretary of State (1-351).</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>POLY_ID</attrlabl>
+        <attrdef>Unique ID within each municipality; combined with TOWN_ID for OS_ID</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>SITE_NAME</attrlabl>
+        <attrdef>Main site name.</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>FEE_OWNER</attrlabl>
+        <attrdef>Owner of the land represetned by the polygon</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>OWNER_ABRV</attrlabl>
+        <attrdef>The link to the OSNAMES table. A simple and unique abbreviation for some of the lengthier names in the field.</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>OWNER_TYPE</attrlabl>
+        <attrdef>Category for the fee owner’s status</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>MANAGER</attrlabl>
+        <attrdef>Entity with day-to-day care of the site (only if different from FEE_OWNER)</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>MANAGR_ABRV</attrlabl>
+        <attrdef>Abbreviation of enitity with day to day management responsibilities for the site</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>MANAGR_TYPE</attrlabl>
+        <attrdef>Category  of enitity with day to day management responsibilities for the site</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>PRIM_PURP</attrlabl>
+        <attrdef>Primary purpose - Code for why the land was protected/improved</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>PUB_ACCESS</attrlabl>
+        <attrdef>Public access - Legal (not physical) level of public access to the land</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>LEV_PROT</attrlabl>
+        <attrdef>Level of protection</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>OLI_1_ORG</attrlabl>
+        <attrdef>Enterprise(s) holding a legal interest in this land</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>OLI_1_ABRV</attrlabl>
+        <attrdef>Abbreviation for OLI_1_ORG</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>OLI_1_TYPE</attrlabl>
+        <attrdef>Category for the interest holder’s status</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>OLI_1_INT</attrlabl>
+        <attrdef>The type of interest held by OLI_1_ORG</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>OLI_2_ORG</attrlabl>
+        <attrdef>Enterprise(s) holding a second legal interest in this land</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>OLI_2_ABRV</attrlabl>
+        <attrdef>Abbreviation for OLI_2_ORG</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>OLI_2_TYPE</attrlabl>
+        <attrdef>Category for the second interest holder’s status</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>OLI_2_INT</attrlabl>
+        <attrdef>The type of interest held by OLI_2_ORG</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>OLI_3_ORG</attrlabl>
+        <attrdef>Enterprise(s) holding a third legal interest in this land</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>OLI_3_ABRV</attrlabl>
+        <attrdef>Abbreviation for OLI_3_ORG</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>OLI_3_TYPE</attrlabl>
+        <attrdef>Category for the third interest holder’s status</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>OLI_3_INT</attrlabl>
+        <attrdef>The type of interest held by OLI_3_ORG</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>GRANTPROG1</attrlabl>
+        <attrdef>Grant program (1) used to acquire/improve land</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>GRANTTYPE1</attrlabl>
+        <attrdef>Category for the grant 1 status</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>GRANTPROG2</attrlabl>
+        <attrdef>Grant program (2) used to acquire/improve land</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>GRANTTYPE2</attrlabl>
+        <attrdef>Category for the grant 2 status</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>PROJ_ID1</attrlabl>
+        <attrdef>Project (1) identifier for the parcel; may include many parcels under a single project (EOEEA legal interests only)</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>PROJ_ID2</attrlabl>
+        <attrdef>Project (2) identifier for the parcel; may include many parcels under a single project (EOEEA legal interests only)</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>PROJ_ID3</attrlabl>
+        <attrdef>Project (3) identifier for the parcel; may include many parcels under a single project (EOEEA legal interests only)</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>EOEAINVOLVE</attrlabl>
+        <attrdef>Indicates the category of funding the parcel received from EOEA sources</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>ARTICLE97</attrlabl>
+        <attrdef>Yes/No. Is the parcel protected under article 97 of the Massachusetts Constitution?</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>FY_FUNDING</attrlabl>
+        <attrdef>Fiscal year project was completed (EOEEA use only)</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>BOND_ACCT</attrlabl>
+        <attrdef>Funding of parcel acquisition/protection (EOEEA use only)</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>GIS_ACRES</attrlabl>
+        <attrdef>GIS-calculated acreage of parcel</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>CAL_DATE_R</attrlabl>
+        <attrdef>Calendar date deed was recorded. If only year is known, it is set to January 1st of that year.</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>DEED_ACRES</attrlabl>
+        <attrdef>Acreage according to the recorded deed</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>OS_DEED_BOOK</attrlabl>
+        <attrdef>The number of the book the deed for this parcel and/or interest was recorded in at the local registry of deeds</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>OS_DEED_PAGE</attrlabl>
+        <attrdef>The starting page of the above recorded deed</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>ASSESS_ACRE</attrlabl>
+        <attrdef>Acreage according to the local assessor maps or database</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>ASSESS_MAP</attrlabl>
+        <attrdef>Tax map identifier text as determined by the Assessor</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>ASSESS_BLK</attrlabl>
+        <attrdef>Tax map block identifier as determined by the Assessor</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>ASSESS_LOT</attrlabl>
+        <attrdef>Tax map lot identifier as determined by the Assessor</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>ASSESS_SUB</attrlabl>
+        <attrdef>Tax map sublot identifier as determined by the Assessor</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>ALT_SITE_NAME</attrlabl>
+        <attrdef>A second name associated with the parcel, if any (e.g. No Town State Forest)</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>ATT_DATE</attrlabl>
+        <attrdef>Date of last attribute edit</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>BASE_MAP</attrlabl>
+        <attrdef>MassGIS base map number (Legacy field from initial data collection effort (1993-1997))</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>SOURCE_MAP</attrlabl>
+        <attrdef>Code linking to the Source Map Worksheet delineating the specifications of the map that the polygon information was taken from. (Legacy field from initial data collection effort (1993-1997))</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>SOURCE_TYPE</attrlabl>
+        <attrdef>Text code indicating what the source data was to give a better estimation of the quality of the polygon attributes. This will be used for the entire polygon. For more specific source information on the arcs bounding the polygon, see the OPENSPACE_ARC feature class.</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>COMMENTS</attrlabl>
+        <attrdef>Comments field</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>LOC_ID</attrlabl>
+        <attrdef>Link to MassGIS standard parcel data (MA SPC NAD83 Meters coordinates of the centroid of the parcel)</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>DCAM_ID</attrlabl>
+        <attrdef>7-digit integer for linking to the DCAM data tables via the ARC_ID field</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>FEESYM</attrlabl>
+        <attrdef>Used for symbolization of ownership</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>INTSYM</attrlabl>
+        <attrdef>Used for symbolization of owner category / state agency</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>OS_ID</attrlabl>
+        <attrdef>Primary key comprising TOWN_ID and POLY_ID</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE</attrlabl>
+        <attrdef>Feature geometry.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE.AREA</attrlabl>
+        <attrdef>Area of polygon in square meters</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE.LEN</attrlabl>
+        <attrdef>Perimeter of polygon in meters</attrdef>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>MassGIS</cntorg>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>One Ashburton Place, Room 1601</address>
+          <city>Boston</city>
+          <state>MA</state>
+          <postal>02108</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>617-619-5641</cntvoice>
+        <cntinst>Download from http://www.mass.gov/itd/os</cntinst>
+      </cntinfo>
+    </distrib>
+    <distliab>Although the initial data collection effort for this data layer has been completed, open space changes continually and this data layer is therefore considered to be under development. Additionally, due to the collaborative nature of this data collection effort, the accuracy and completeness of open space data varies across the state’s municipalities. Attributes, while comprehensive in scope, may be incomplete for many parcels.</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>Shapefiles and ArcGIS File Geodatabase</formname>
+          <formvern>ArcGIS 10</formvern>
+        </digtinfo>
+      </digform>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20140815</metd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Executive Office of Energy and Environmental Affairs</cntorg>
+          <cntper>Ben Smith</cntper>
+        </cntorgp>
+        <cntpos>GIS Analyst / DBA, Protected &amp; Recreational Open Space Program</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>251 Causeway Street, 5th Floor</address>
+          <city>Boston</city>
+          <state>MA</state>
+          <postal>02114</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>(617) 626-1076</cntvoice>
+        <cntfax>(617) 626-1249</cntfax>
+        <cntemail>benjamin.smith@state.ma.us</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+  </metainfo>
+</metadata>
