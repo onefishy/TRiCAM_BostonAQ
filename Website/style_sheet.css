@@ -1,7 +1,36 @@
 .body {
-	font: 12 px Arial;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
 }
 
+p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.point-cell {
+  fill: none;
+  pointer-events: all;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+
+.point-cell:hover, .point-cell.selected {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .6;
+  stroke-width: 2px;
+}
+
+.point-cell.selected {
+  stroke-opacity: 1;
+  stroke-width: 3px;
+}
+
+.point circle {
+  pointer-events: none;
+}
 
 #map {
 	position: absolute;
@@ -18,14 +47,19 @@
 #side_bar {	
 	opacity: .3;
 	width: 300px;
+	height: 100%;
 	position: absolute; 
 	top: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 3;
 	background: #A9A9A9; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */	
-		}
+}
 
+#content {	
+	position: relative; 
+	left: 20%;
+	z-index: 5;	
+}
 
 
 #footer {
@@ -42,16 +76,13 @@
 
 #info {
 	opacity: 1;
-	width: 200px;
-	height: 300px;
-	right: 50;
+	width: 300px;
 	align-content: center;
-	top: 10px;
-	background: #D9DEE1;
-	background: co;
 	position: absolute; 
+	top: 10px;
+	right: 0;
 	z-index: 5;
-#E0E0E0#515151}
+}
 
 
 button {
@@ -84,4 +115,87 @@ button {
 	padding-left: 36px;
 	width:128px;
 	height:128px;
+}
+
+#selections,
+#loading:after {
+  position:absolute;
+  background-color: #FFF;
+  opacity: 0.8;
+  border-radius: 2px;
+  padding: 10px 10px 0 10px;
+  z-index: 10;
+}
+
+#loading.visible:after {
+  top: 50%;
+  left: 50%;
+  height: 28px;
+  width: 80px;
+  margin-left: -50px;
+  margin-top: -30px;
+  content: 'drawing...';
+  font-size: 18px;
+  z-index: 5;
+}
+
+#selections {
+  top:200px;
+  width: 190px;
+  z-index: 5;
+}
+
+#selections label {
+  display: block;
+  padding-bottom: 8px;
+  z-index: 5;
+}
+
+#selections input[type=checkbox] {
+  position: relative;
+  top: -1px;
+  z-index: 5;
+}
+
+#selections .key {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  margin: 0 5px;
+}
+
+.hide,
+.show {
+  padding-bottom: 10px;
+  display: block;
+  z-index: 5;
+}
+
+.content {
+  display: none;
+  z-index: 5;
+}
+
+@media (min-width: 480px) {
+  .selections .content {
+    display: block;
+  }
+  .selections .show {
+    display: none;
+  }
+}
+
+.hidden .content,
+.visible .show {
+  display: none;
+}
+
+.hidden .show,
+.visible .content {
+  display: block;
+}
+
+.mapbox-control-info {
+  display: none !important;
 }
