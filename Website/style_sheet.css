@@ -37,22 +37,24 @@ p {
 	top: 0;
 	float: right;
 	left: 0;
+	width:100%;
 	bottom: 50px; /* Set this to the height of the footer */
 	right: 300px; /* Set this to the width of the nav bar */
-	background-color: #FBFBFB;
+	background-color: e1e1e1;
 	z-index: 2;
 
 }
 
 #side_bar {	
 	opacity: .3;
-	width: 300px;
+	z-index: 4;
+	width: 200px;
 	height: 100%;
 	position: absolute; 
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background: #A9A9A9; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */	
+	background: #c7c7c7; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */	
 }
 
 #content {	
@@ -63,6 +65,7 @@ p {
 
 
 #footer {
+	opacity:.5;
 	position: absolute;
 	bottom: 0;
 	right: 230px; /* Set this to the width of the nav bar */
@@ -70,13 +73,13 @@ p {
 	width: 100%;
 	height: 50px; 
 	overflow: hidden; /* Disables scrollbars on the header frame. To enable scrollbars, change "hidden" to "scroll" */
-	background: #69C5D3;
+	background: #c7c7c7;
 	z-index: 4;
 }
 
 #info {
 	opacity: 1;
-	width: 300px;
+	width: 240px;
 	align-content: center;
 	position: absolute; 
 	top: 10px;
@@ -100,7 +103,7 @@ button {
     padding: 15px 32px;
 	background-color: white;
     color: black;
-    border: 2px solid #C1E4F7;}
+    border: 2px solid #c7c7c7;}
 
 #tour {
 	margin-left: 11;
@@ -108,11 +111,11 @@ button {
     padding: 15px 46px;
 	background-color: white;
     color: black;
-    border: 2px solid #C1E4F7;}
+    border: 2px solid #c7c7c7;}
 
 #logo {
 	padding-top: 25px;
-	padding-left: 36px;
+	padding-left: 28px;
 	width:128px;
 	height:128px;
 }
