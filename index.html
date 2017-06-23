@@ -69,7 +69,7 @@
 
 <p>There are currently only 5 sensors in Boston collecting data on air quality. Due to this limited amount of data, we would like to simulate more data from our collection data on air quality, which is a similar approach to the data simulation methods implemented in the Zurich study [2]. We also plan to utilize data on Boston transit routes, land use, traffic, green spaces, bike lanes, and weather in our model.</p>
 
-<p>In addition, we have been inspired by scientists who completed a study on air pollution and active travel to use optimization methods in order to create a routing system that we could implement in our web interface [3]. This ultimately would advise people a mode of transportation, i.e. biking, walking, public transport, given the levels of air pollutants measured in a particular day.</p>
+<p>In addition, we have been inspired by scientists who completed studies on air pollution in an effort to understand and utilize the things that contribute to poor air quality in urban settings [3]. In the end, our interface would serve both as an educational tool for the public and as a tool for scientists to better visualize pollution. </p>
 
 <p><a name="Problem"></a></p>
 <h3 id="iii-problem-statement-and-methods">III. Problem Statement and Methods</h3>
@@ -77,11 +77,11 @@
 
 <p>For building our statistical models, we will gather, clean and merge other data on transportation, weather and land use patterns. Our intended sources of this data can be found in our Data Sources section. We expect that many of these data sources will not be easily accessible, as we already know some have rate limits, outdated or nonexistent APIs and strange formatting.</p>
 
-<p>Our goal for our final deliverable is to not only identify “danger spots” for those with health concerns such as asthma, COPD and allergies, but also offer optimized routes that minimizes pollution exposure. We expect that adapting existing air quality models and route algorithms to fit this goals will be a major challenge, given the specificity of our goal. We must also take into account common pitfalls like accuracy, model overfitting, and visualization of high dimensional spaces.</p>
+<p>Our goal for our final deliverable is to identify “danger spots” for those with health concerns such as asthma, COPD and allergies. By using both Gaussian Processes and neural networks, we hope to accurately predict the levels of criteria pollutants in Boston and the surrounding areas. We expect that adapting existing air quality models and route algorithms to fit this goals will be a major challenge. We must also take into account common pitfalls like accuracy, model overfitting, and visualization of high dimensional spaces.</p>
 
 <p><a name="Deliverables"></a></p>
 <h3 id="iv-deliverables">IV. Deliverables</h3>
-<p>The goal of our midterm deliverable consist of two parts. One is to implement a baseline statistical model of Boston’s air quality. The other is a proof of concept web interface for a live Boston pollution tracker. After week 6, we will work to implement a route planner for our web interface as well as improve upon our previous work. In our first week at Harvard, we have brainstormed several additional ambitious ideas. If time permits, we would like to use our air quality simulations in combination with optimization algorithms to provide urban planning tools for Boston policymakers. Ideally, the models we create would be compatible with and useful to other cities around the world.</p>
+<p>The goal of our midterm deliverable consist of two parts. One is to implement a baseline statistical model of Boston’s air quality. The other is a proof of concept web interface for a Boston pollution tracker. After week 6, we will work to implement an improved neural network model for our web interface as well as improve the design and usability. In our first week at Harvard, we have brainstormed several additional ambitious ideas. If time permits, we would like to use our air quality simulations to provide urban planning tools for Boston policymakers. Ideally, the models we create would be compatible with and useful to other cities around the world.</p>
 
 <p><a name="Data"></a></p>
 <h3 id="v-data-sources">V. Data Sources</h3>
@@ -89,12 +89,14 @@
 
 <ul>
   <li>Air quality data from the Environmental Protection Agency (EPA)</li>
-  <li>Boston area traffic data from the Google Maps API</li>
+  <li>Boston area traffic data from MassDOT Highway Division and Boston Region Metropolitan Planning Organization </li>
   <li>Topological data from Harvard’s Center for Geographical Analysis (CGA)</li>
-  <li>Bike lane and road design data from massGIS, bostonGIS and/or arcGIS</li>
-  <li>Boston area green space data on NASA’s normalized difference vegetation index (NDVI)</li>
-  <li>Weather data from National Oceanic and Atmospheric Administration (NOAA)</li>
-  <li>MBTA public transit route data and schedules
+  <li>Bike lane and road design data from MassGIS, BostonGIS and/or arcGIS</li>
+  <li>Boston area land use data from MassGIS</li>
+  <li>Boston area green space data from MassGIS</li>
+  <li>Weather data from National Oceanic and Atmospheric Administration (NOAA) and Weather Underground</li>
+  <li>MBTA public transit route data and schedules</li>
+  <li>Land use data fora variety of other locations around the US from USGS
 If time permits, we will also gather:</li>
   <li>Twitter data to extrapolate allergy hotspots</li>
   <li>Data on population movement within Boston</li>
@@ -109,6 +111,7 @@ If time permits, we will also gather:</li>
   <li>Land use regression, linear regression, optimization in Python</li>
   <li>D3, CSS and HTML for our web application’s interface we will use</li>
   <li>Amazon Web Services for cloud computing to store and process data</li>
+  <li>Shapely and PyShp to work with Shapefiles</li>
   <li>GitHub for project collaboration, organization, and file backup</li>
 </ul>
 
@@ -132,12 +135,19 @@ If time permits, we will also gather:</li>
 
 <p><strong>Week 3:</strong></p>
 <ul>
-  <li>Run some simple models, such as land use regression</li>
+  <li>Continue data collection, cleaning, and rastering</li>
   <li>Design interface: PDF storyboard</li>
   <li>Meeting with Gary and adjust plan</li>
 </ul>
+    
+<p><strong>Week 4:</strong></p>
+<ul>
+  <li>Finish data collection, cleaning, and rastering. </li>
+  <li>Train simple models such as land use regression, use land use data around the country to train</li>
+  <li>Continue to design interface</li>
+</ul>
 
-<p><strong>Week 4-6:</strong></p>
+<p><strong>Week 5-6:</strong></p>
 <ul>
   <li>Implementation of advanced models: additional reading if needed</li>
   <li>Report back to Gary a geographical cost analysis to suggest sensor placement</li>
