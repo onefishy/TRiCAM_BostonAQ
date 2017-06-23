@@ -22,11 +22,11 @@ def gen_rand_pts(min_x, min_y, delta_x, delta_y, y_cell, x_cell, rand_num):
 #Testing the function above
 x = [ -71.20197, -70.96679]
 y = [42.291441, 42.420578]
-x_cell = 100
-y_cell = 100
+x_cell = 50
+y_cell = 50
 num_pts = 100
 delta_x = abs(x[1] - x[0]) * 1. / x_cell
-delta_y = abs(x[1] - x[0]) * 1. / y_cell
+delta_y = abs(y[1] - y[0]) * 1. / y_cell
 
 rand_pts = gen_rand_pts(x[0], y[0], delta_x, delta_y, x_cell, y_cell, num_pts)
 
