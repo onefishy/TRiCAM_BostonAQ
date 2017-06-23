@@ -1,7 +1,0 @@
-\beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{Introduction to Data Science}{5}{0}{1}
-\beamer@sectionintoc {2}{What is Jupyter/IPtyhon}{9}{0}{2}
-\beamer@sectionintoc {3}{Quick Review of Python Basics}{14}{0}{3}
-\beamer@sectionintoc {4}{Data Gathering \& Cleaning}{34}{0}{4}
-\beamer@sectionintoc {5}{Data Exploration: Descriptive Statistics}{75}{0}{5}
-\beamer@sectionintoc {6}{Data Exploration: Data Visualization}{90}{0}{6}

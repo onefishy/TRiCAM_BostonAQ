@@ -1,8 +1,0 @@
-\beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{Review}{3}{0}{1}
-\beamer@sectionintoc {2}{Motivating Regression}{8}{0}{2}
-\beamer@sectionintoc {3}{Stats Review}{21}{0}{3}
-\beamer@sectionintoc {4}{Linear Regression (Univariate)}{31}{0}{4}
-\beamer@sectionintoc {5}{Linear Regression (Multivariate)}{37}{0}{5}
-\beamer@sectionintoc {6}{Polynomail Regression}{41}{0}{6}
-\beamer@sectionintoc {7}{What is Machine Learning?}{53}{0}{7}
