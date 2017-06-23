@@ -8,26 +8,27 @@
 #map {
 	position: absolute;
 	width: 100%;
+	height: 100%;
 	top: 0;
 	float: right;
 	left: 0;
 	bottom: 50px; /* Set this to the height of the footer */
 	right: 300px; /* Set this to the width of the nav bar */
-	background-color: #FBFBFB;
+	background-color: #e1e1e1;
 	z-index: 0;
 
 }
 
 #side_bar {	
-	opacity: .3;
-	width: 300px;
+	opacity: .4;
+	width: 200px;
 	height: 100%;
 	position: absolute; 
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background: #A9A9A9; 
-	z-index: 1;
+	background: #c7c7c7; 
+	z-index: 2;
 }
 
 #content {	
@@ -37,20 +38,20 @@
 
 
 #footer {
-	opacity: 1;
+	opacity: .4;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 50px; 
+	height: 20px; 
 	overflow: hidden; /* Disables scrollbars on the header frame. To enable scrollbars, change "hidden" to "scroll" */
-	background: #000000;
-	z-index: 3;
+	background: #c7c7c7;
+	z-index: 1;
 }
 
 #info {
 	opacity: 1;
-	width: 300px;
+	width: 210px;
 	align-content: center;
 	position: absolute; 
 	top: 10px;
@@ -65,28 +66,31 @@ button {
     display: block;
     font-size: 16px;
 	border-radius: 4px;
-	opacity: 1;
+	opacity: .8;
 }
 
 #advanced {
 	margin-left: 11;
 	margin-top: 10;
-    padding: 15px 32px;
-	background-color: white;
-    color: black;
-    border: 2px solid #C1E4F7;}
+    padding: 2px 13px 2px;
+	background-color: #e2e2e2;
+    color: #938dd8;
+    border: none;
+	font-family:"Georgia", serif;}
 
 #tour {
 	margin-left: 11;
 	margin-top: 10;
-    padding: 15px 46px;
-	background-color: white;
-    color: black;
-    border: 2px solid #C1E4F7;}
+	margin-bottom: 6px;
+    padding: 2px 25px 2px;
+	background-color: #e2e2e2;
+    color:  #938dd8;
+    border: none;
+	font-family:"Georgia", serif;}
 
 #logo {
-	padding-top: 25px;
-	padding-left: 36px;
+	padding-top: 20px;
+	padding-left: 4px;
 	width:128px;
 	height:128px;
 }
