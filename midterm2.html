@@ -100,23 +100,15 @@
 <h4 id="v-data-sources">V.I.I Multiple Linear Regression</h4>
 
 <p>
-Multiple Linear Regression (MLR) is a type of regression analysis that is used to predict the value of a response variable (air quality) from of a set of multiple predictors (land use, traffic, weather, etc.). The main motivation of MLR is the belief that a set of n > 1 predictors is believed to be related to a response variable y. In MLR we assume that this relationship is linear, and a combination of predictors (the land use attributes) multiplied by some unknown and fixed regression coefficients. 
+  Multiple Linear Regression (MLR) is a type of regression analysis that is used to predict the value of a response variable (air quality) from of a set of multiple predictors (land use, traffic, weather, etc.). The main motivation of MLR is the belief that a set of n > 1 predictors is believed to be related to a response variable y. In MLR we assume that this relationship is linear, and a combination of predictors (the land use attributes) multiplied by some unknown and fixed regression coefficients.</p>
 
-A linear model is parametric, and thus has a formatted equation.
-	Let x1, x2, … xn be a set of n predictors believed to be related to y, our response. In the context of our project, these are land use attributes
-	We will store our regression coefficients in the set corresponding coefficients B1, B2… Bn. There is also an intercept term (Bo)
-	Our noise term will be written as (e)
+ <p>
+   A linear model is parametric, and thus has a formatted equation. Let x1, x2, … xn be a set of n predictors believed to be related to y, our response. In the context of our project, these are land use attributes. We will store our regression coefficients in the set corresponding coefficients B1, B2… Bn. There is also an intercept term \Beta_0, and a noise term written as \epsilon.</p>
 
-The Multiple Linear Regression model for the j-th sample unit has the form:
-Yj = Bo + B1Xj1 + B2Xj2, + … +BnXjn + Ej
+  <p>The Multiple Linear Regression model for the j-th sample unit (measurement) has the form:</p>
+$ Y_j = \Beta_0 + \Beta_1*X_(j,1) + \Beta_2*X_(j,2), + … + \Beta_n*X_(j,n) + \epsilon_j $
 
-	
-	
-
-As a result, a linear relationship is developed from more than one predictor variable, as each predictor is multiplied by a coefficient in a linear form. In analysis of this model, these coefficients that are found work together to generate 
-
-of f(x) = B1X1 + B2X2, + … + Bo + E where each parameter or land use type (Xn) has a corresponding coefficient (Bn). There is also an intercept term and a noise term (E). In our Land Use Regression we assume that the noise is normally distributed. 
-</p>
+<p>As a result, a linear relationship is developed from more than one predictor variable, as each predictor is multiplied by a coefficient in a linear form. In analysis of this model, these coefficients that are found work together to generate a model to find as small a difference between the observed and predicted values as possible. In our Land Use Regression we assume that the noise is normally distributed, which holds in Multiple Linear Regression as well. Further, the covariance of the noise terms of two samples (ie, ej and e(j+1)) is zeros, which shows that the error of one measurement is related to the error of another.</p>
 
 <h4 id="v-data-sources">V.I.II Bayesian Regression</h4>
 
