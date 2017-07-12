@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Project Summary</title>
+
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+
+  <body>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Team Air Quality Work Statement</h1>
+  </header>
+
+<p><strong>Team Members</strong>: Anthony DePinho*, Tara Ippolito*, Biyonka Liang*, Kaela Nelson*, Annamira O’Toole*</p>
+
+<p><strong>Postdoc Advisor</strong>: Weiwei Pan</p>
+
+<p><strong>Sponsor</strong>: Gary Adamkiewicz, Pavlos Protopapas</p>
+
+<p><strong>Table of Contents:</strong></p>
+
+<p><a href="#Abstract">I. Abstract</a></p>
+
+<p><a href="#Introduction">II. Introduction</a></p>
+
+<p><a href="#Problem">III. Problem Statement</a></p>
+
+<p><a href="#Data">IV. Data Collection and Cleaning</a></p>
+
+<p><a href="#Computational">V. Computational Resources</a></p>
+
+<p><a href="#Math">VI. Mathematical Modelling</a></p>
+
+<p><a href="#Interface">VII. Interface</a></p>
+
+<p><a href="#Acknowledgements">VIII. Acknowledgements</a></p>
+
+<p><a href="#References">IX. References</a></p>
+
+<p><a href="#Code">X. Code and Data</a></p>
+
+<p><a name="Abstract"></a></p>
+<h3 id="i-abstract">I. Abstract</h3>
+
+<p>Air pollution is a significant concern for urban and suburban settings. The wide range of personal, industrial, and natural activities that take place in an urban space each contribute to the air pollution in their own way. This project will be conducted through widespread collection of data, application of advanced statistical models, and computational mathematics techniques. The acquisition of data for this project will span various sources in the greater Boston area that pertain to air quality and its intersection with urban living, transportation, land use, and weather, in addition to data on the air pollutants themselves. Our plan for our final deliverable is an accessible interface demonstration of the results of this rigorous modeling that can help city residents make more informed decisions on how to live a cleaner life. There will be a particular emphasis on aiding people potentially more vulnerable to air pollution, such as people with respiratory illnesses or allergies, pedestrians, and cyclists.</p>
+
+<p><a name="Introduction"></a></p>
+<h3 id="ii-intro">II. Introduction</h3>
+<p>Air pollution data, particularly in the city of Boston, is increasingly important to analyze in health and environmental settings. The pollutants Sulfur Dioxide (SO₂), Nitrogen Dioxide (NO₂), and Fine Particulate Matter (PM₂.₅ ) are the most detrimental to human health. Thus we have collected and will continue to collect data on these compounds.</p>
+
+<p>While pollutants have serious impacts on the environment - for example, Sulfur Dioxide contributes to acid rain - we are focusing on the human health impacts. Sulfur Dioxide comes from multiple sources such as power plants and has been linked to cardiovascular and respiratory issues. Nitrogen Dioxide, whose source is primarily combustion, affects the respiratory systems and is also an indicator of other carcinogenic chemicals that are not widely measured. Fine Particulate Matter contributes to increased cortisone levels and hormone irregularities. In addition, Fine Particulate Matter, which comes upwind from the midwest and is produced by local combustion, is one of the most damaging pollutants as the small particle size allows the particles to enter the alveolar sacs of the lungs and enter the bloodstream directly [1]. The Environmental Protection Agency sets standard levels for each of these pollutants that are deemed acceptable for public health. We are using these standards as a baseline for our model.</p>
+
+<p>In addition, we have been inspired by scientists who completed studies on air pollution in an effort to understand and utilize the things that contribute to poor air quality in urban settings [3]. In the end, our interface would serve both as an educational tool for the public and as a tool for scientists to better visualize pollution.</p>
+
+<p><a name="Problem"></a></p>
+<h3 id="iii-problem-statement-and-methods">III. Problem Statement</h3>
+<p>There are two main challenges that motivate this project. Most prominently, there are five Environmental Protection Agency (EPA) air quality sensors located in the Greater Boston Area that are responsible for recording all air quality data for all the significant pollutants in the entire city. Spatially speaking, there are not enough EPA sensors to provide an adequate assessment of air quality conditions for the entire city, as large portions of the city are outside the range of existing sensors. Since the installation of new sensors to provide more widespread coverage of land is a difficult task, our main objective is to implement statistical modeling techniques such as Land Use Regression and the Gaussian Process to model air pollution in areas that sensors do not cover. The model parameters come from data that we have collected for land use, weather, bus routes, traffic, and open space. The specifics of data collection and models used will be discussed later in this report.</p>
+
+<p>Another challenge that this project plans to meet is the lack of legible scientific data that has important effects on the health of urban residents. The EPA makes all of its air quality data publicly available, but it does so in large data sets that use scientific language which may be inaccessible to the majority of citizens with no scientific expertise. Thus, a second motivation of this project is to design an easy-to-read, interactive interface that will provide a more intuitive visualization of significant air quality data. The interface will provide users with a tangible way to understand air quality conditions on both a widespread and granular level, so the products of our research can be displayed legibly and able to be interpreted in simple ways by anyone who uses the interface.</p>
+
+<p><a name="Data"></a></p>
+<h3 id="iv-deliverables">IV. Data Collection and Cleaning</h3>
+<p>Our goal is to implement a Land Use Regression through a Gaussian Model that will predict air quality in areas of Boston lacking sensors. We first collected static data (land use, open space, and bus routes) and dynamic data (traffic and weather).</p>
+
+<p>Sources:</p>
+
+<p>We pulled land use and green space from MassGIS’s OLIVER tool. Air quality data was pulled from the Environmental Protection Agency (EPA). We found Boston area traffic data from MassDOT Highway Division and Boston Region Metropolitan Planning Organization. Topological data was pulled from Harvard’s Center for Geographical Analysis (CGA). Weather data came from the National Oceanic and Atmospheric Administration (NOAA) and Weather Underground. Lastly, public transit route data and schedules came from MBTA (dynamic) and MassGIS’s OLIVER tool (static). If time permits, we will also gather data on population movement within Boston through the US Census.</p>
+
+<p>Format and Cleaning:</p>
+
+<p>Our land use data was downloaded as GIS shapefiles. Each land use type is described by a string format of polygons and multipolygons (polygons within polygons). We manually rastered this data set to a csv format, which is the same format that the air pollutant, weather, and traffic data was downloaded in. After rastering and formatting, each layer of data was prepared to be implemented in our grid system.</p>
+
+<p>Grid System:</p>
+
+<p>Once we created data layers with a consistent format, we implemented a grid system. Within a 107.495 square mile region in Massachusetts that includes Boston, we created 2500 cells. Within each cell, we simulated 100 random points that we use to find proportions of land use within a particular cell. Our proportion system also captures green space, weather, number of bus stops within each cell. These proportions are then used as predictor variables in our models. </p>
+
+<p><a name="Computational"></a></p>
+<h3 id="v-data-sources">V. Computational Resources</h3>
+<p>We will conduct our data exploration and research with IPython 3 and Jupyter Notebook. For visualization of statistics we used SciPy, scikit-learn for modeling, and Matplotlib. Land use regression, linear regression, and Gaussian Processes were implemented in Python using sklearn. D3, CSS and HTML are being used for our web application’s interface. For Boston area mapping in Javascript we used Leaflet. Amazon Web Services was used for cloud computing to store and process data, it was also used to run our scripts. Shapely and PyShp allowed us to work with Shapefiles. Finally, GitHub is used for project collaboration, organization, and file backup.</p>
+
+<p><a name="Math"></a></p>
+<h3 id="v-data-sources">V. Mathematical Modelling</h3>
+
+<h4 id="v-data-sources">V.I Land Use Regression</h4>
+
+<p>The Land Use Regression is a regression model whose parameters include non-temporal data relevant to land use, including land use attributes, wind speed and air pressure. In a given area where these land use attributes are known, and air pollution concentrations are known, we wish to build a model that can accurately predict air quality in areas where the same land use attributes are known, but air pollution concentrations are unknown. We are using the Land Use Regression Model both as a baseline for variable selection, and as a starting point for our more sophisticated models that involve the formulation of priors. The mean of the predicted air quality values from the Land Use Regression will be used as a prior in the Gaussian Process.</p>
+
+<h4 id="v-data-sources">V.I.I Multiple Linear Regression</h4>
+
+<p>
+Multiple Linear Regression (MLR) is a type of regression analysis that is used to predict the value of a response variable (air quality) from of a set of multiple predictors (land use, traffic, weather, etc.). The main motivation of MLR is the belief that a set of n > 1 predictors is believed to be related to a response variable y. In MLR we assume that this relationship is linear, and a combination of predictors (the land use attributes) multiplied by some unknown and fixed regression coefficients. 
+
+A linear model is parametric, and thus has a formatted equation.
+	Let x1, x2, … xn be a set of n predictors believed to be related to y, our response. In the context of our project, these are land use attributes
+	We will store our regression coefficients in the set corresponding coefficients B1, B2… Bn. There is also an intercept term (Bo)
+	Our noise term will be written as (e)
+
+The Multiple Linear Regression model for the j-th sample unit has the form:
+Yj = Bo + B1Xj1 + B2Xj2, + … +BnXjn + Ej
+
+	
+	
+
+As a result, a linear relationship is developed from more than one predictor variable, as each predictor is multiplied by a coefficient in a linear form. In analysis of this model, these coefficients that are found work together to generate 
+
+of f(x) = B1X1 + B2X2, + … + Bo + E where each parameter or land use type (Xn) has a corresponding coefficient (Bn). There is also an intercept term and a noise term (E). In our Land Use Regression we assume that the noise is normally distributed. 
+</p>
+
+<h4 id="v-data-sources">V.I.II Bayesian Regression</h4>
+
+<p>After implementing the land use regression in a multiple linear regression, we computed a corresponding coefficient for each predictor variable. The coefficients determine the importance of variables and their weight in our model. This raised an issue of over fitting when we began to model with a less robust data set.</p>
+
+<p>By using a Bayesian regression model, we can account for this issue by incorporating priors on the coefficients the model. Incorporating priors allows us to inject bias into the model that will help us prioritize the variables that most affect air pollutant levels. The two types of priors, or regularizations, we experimented with are Lasso Regression, which focuses on a L1 regularization, and Ridge Regression, which uses a L2 regularization. L1 regularization assumes a Laplace distribution and its regularization term is the sum of weights, while L2 regularization assumes a Gaussian distribution and its regularization term is the sum of the square of the weights. Since Lasso regression creates sparse matrices, we focused on implementing Ridge Regression. Once we incorporate priors in our ridge regression, we create the model with the same format as our multiple linear regression.</p>
+
+
+<h4 id="v-data-sources">V.II Gaussian Proccesses</h4>
+
+<p>The above models are parametric models, which assume a fixed form. For example, the models above follow a linear form, $f(x) = a_1x_1+a_2x_2+....$ Though these models are effective when we suspect $f(x)$ to follow a certain form, they lack flexibility when fitting data with more complex relationships. We now consider a non-parametric model called Gaussian Processes, in which the form of the predictor function varies with the data. This approach allows the data to guide the form of the model, rather than manipulating a fixed model to fit the data. Therefore, Gaussian Processes allow us to consider a non-linear model that is more flexible and likely more accurate than a high-degree polynomial model.</p>
+
+<p>Specifically, a Gaussian Process refers to a collection of random variables $W = {w_1, ….,w_n}$ such that any finite subset of W is jointly Gaussian. For example, let $y = {y_1, y_2, ...y_n}$ be the NO2 levels for various states across America. We also have sets of data that we believe has some relationship with NO2 readings, such as weather, traffic and land use. Let us call this dataset $X$.  Let $y*={y_{n+1}, … y_m}$ be the NO2 levels for each of our grids in Boston. We want to predict the NO2 levels in Boston using the model we trained on $X$ and $y$. Therefore, we can treat each element in $y*$ as a random variable such that the joint distribution of $y$ and $y*$ are multivariate normal, $[y, y*] ~ N(\mu, \Sigma)$.  We can then use the properties of multivariate normals to find the conditional distribution of each $y*$ element given our $y$ values. Because the conditionals of multivariate Gaussian distributions are also multivariate Gaussian, a Gaussian Process will output a unique Gaussian distribution for each element in $y*$. These Gaussian distributions are useful because they encode beliefs about expected value and confidence. In the figure below, we see that both distributions have an expected value of $0$. However, the left distribution has a wider spread. Therefore, we would be more confident in our prediction if the right distribution described our prediction for some $y^*_i$ in $y*$.</p>
+
+<p>The assumption that our data must follow some multivariate Gaussian distribution may seem rigid at first glance, but Gaussian Processes are actually universal. Consider this: we can think of any data set  $(y_1, ...y_n)$ as a point sampled from some $n$-th dimensional multivariate normal distribution. Since we can associate every dataset to some multivariate Gaussian distribution, intuitively, we can apply the Gaussian Process to it.</p>
+
+<p>The Gaussian Process is based on the belief that the relationship between weather data, land use data, and traffic data, etc, is similar to the relationship between country-wide air quality data and Boston area air quality data ($y$ and $y*$ respectively). We capture the nature of the relationship between our input variables with a covariance matrix. The covariance matrix is filled in by a kernel function, which for every position in the matrix takes in two sets of input data, and outputs the value of variance between those two sets. This results in the diagonal of the covariance matrix representing the variance of one input variable with itself, for example, the variance of our weather data set. All other values not along the diagonal express the covariance of one input with another, for example, how weather varies with traffic. With the covariance matrix we mathematically capture the relationship between weather, land use, traffic, etc. Since we do not have air quality data for Boston, we use the covariance matrix from our input data in combination with the air quality data we have from other cities around the United States to approximate it. </p>
+
+<p>In our Gaussian Process, we use the radial basis function (RBF) kernel. </p>
+<p>$ K(x, x’) = \sigma^2*exp[\frac{-(x-x’)^2}{2\ell^2}]+\sigma_n^2 \delta(x, ‘x’) $</p>
+<p>Where $ \sigma_f^2 $ is the amplitude of the air quality approximation, $ \ell $ is the length scale, and $ \sigma_n^2 $ is the noise variance. </p>
+<p>Currently, we have trained a Gaussian Process model using land use and pollution levels data from many countries around the US. However, this data was collected in the 1970s. Outdated data hinders us from making accurate predictions about current pollution levels. In the next two weeks, we will add weather and sea level data to our model, which were collected in the past decade. In order to improve the accuracy and granularity of our model, we aim to add real-time traffic data and a time element in our Gaussian Process by the end of week 9.</p>
+
+
+<p><a name="References"></a></p>
+<h3 id="vii-references">VII. References</h3>
+
+<p>[1] Much of the information on the health impacts of the pollutants we are studying comes from Dr. Jaime Hart from the Harvard T.H. Chan School of Public Health.</p>
+
+<p>[2] Hasenfratz, David, Olga Saukh, Christoph Walser, Christoph Hueglin, Martin Fierz, Tabita Arn, Jan Beutel, and Lothar Thiele. "Deriving High-resolution Urban Air Pollution Maps Using Mobile Sensor Nodes." Pervasive and Mobile Computing 16 (2015): 268-85. Web.</p>
+
+<p>[3] Hankey, Steve, Greg Lindsey, and Julian D. Marshall. "Population-Level Exposure to Particulate Air Pollution during Active Travel: Planning for Low-Exposure, Health-Promoting Cities." Environmental Health Perspectives 125.4 (2016): n. pag. Web.</p>
+
+<p><a name="Code"></a></p>
+<h3 id="viii-code-and-data">VIII. Code and Data</h3>
+<p><a href="https://github.com/onefishy/TRiCAM_BostonAQ">Code Repository</a></p>
+<p><a href="boston_aq.html">Air Quality Viz</a></p>
+<p><a href="midterm.tex">Midterm Deliverable as LaTex Document</a></p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main>
+
+</html>
