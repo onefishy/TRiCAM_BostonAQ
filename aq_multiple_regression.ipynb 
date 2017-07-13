@@ -1,0 +1,259 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 480,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "import pandas as pd\n",
+    "import sys\n",
+    "import numpy as np\n",
+    "import scipy as sp\n",
+    "import matplotlib.pyplot as plt\n",
+    "import seaborn as sns\n",
+    "import sklearn as sk\n",
+    "from sklearn.model_selection import train_test_split\n",
+    "from sklearn.linear_model import Ridge\n",
+    "from sklearn.linear_model import Lasso\n",
+    "from sklearn.linear_model import LinearRegression\n",
+    "from sklearn.neighbors import KNeighborsRegressor\n",
+    "from sklearn.gaussian_process import GaussianProcessRegressor\n",
+    "from sklearn.gaussian_process.kernels import RBF, ConstantKernel as C\n",
+    "import statsmodels.api as sm\n",
+    "import pickle\n",
+    "from sklearn import preprocessing\n",
+    "sns.set(style=\"ticks\")\n",
+    "%matplotlib inline"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 481,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "pm = pd.read_csv(\"finished_pm.csv\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 482,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "def rename_again(df):\n",
+    "    df=df.rename(columns = {'saltwater/sandybeach':'saltwater_sandybeach'})\n",
+    "    df=df.rename(columns = {'urban_public/institution':'urban_public_institution'})\n",
+    "    return df"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 483,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "pm = rename_again(pm)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 484,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\"\"\"Delete Variables that do not contribute to ppm\"\"\"\n",
+    "del pm[\"saltwater_sandybeach\"]\n",
+    "del pm[\"recreational\"]\n",
+    "del pm[\"marina\"]\n",
+    "del pm[\"mining\"]\n",
+    "del pm[\"waste\"]\n",
+    "del pm[\"cemetary\"]\n",
+    "del pm[\"golfcourse\"]\n",
+    "del pm[\"high_density_residential\"]\n",
+    "del pm[\"low_density_residential\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 485,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "\"\"\"Multiple linear Regression\"\"\"\n",
+    "def reg_m(y, x):\n",
+    "    model = sm.OLS(y, x.astype(float)).fit()\n",
+    "    #fits simple ordinary least squares model\n",
+    "    predictions = model.predict(x)\n",
+    "    #makes predictions for y based on x\n",
+    "    return(model.summary())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 526,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "#splits train, test sets\n",
+    "train, test = train_test_split(pm, test_size=.30, random_state=0)\n",
+    "\n",
+    "#Scales y data (ppm values)\n",
+    "y_train = train['ppm'].values * 100\n",
+    "y_test = test['ppm'].values * 100"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 527,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "'''Method that takes in a list of all the predictors left in the model, and the model, \n",
+    "spits out the lowest p valued predictor and lowest p value'''\n",
+    "def find_low_p(all_preds, model_OLS):\n",
+    "    #initiates lowest p value\n",
+    "    lowestp = min(model_OLS.pvalues)  \n",
+    "    index = list(model_OLS.pvalues).index(lowestp)\n",
+    "    lowestlu = all_preds[index]\n",
+    "\n",
+    "    return lowestp , lowestlu"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 528,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "\"\"\"Input: y data set, list of predictor variables\n",
+    "Action: X data set formed, runs a MLR through data set, computes pvalue, deletes predictor with least pvalue\n",
+    "returns: models - one for each new data set created after deleting\n",
+    "\"\"\"\n",
+    "def backwards_var_sel(y, all_predictors, train):\n",
+    "    models = [] #to hold all the models\n",
+    "    x = train[all_predictors].values\n",
+    "    \n",
+    "    for i in range(len(all_predictors)):\n",
+    "        #fit a MLR to data set\n",
+    "        OLS_model = sm.OLS(y, x).fit()\n",
+    "        \n",
+    "        #finds lowest pvalue and index of lowest pvalue\n",
+    "        lowestp, lowestlu = find_low_p(all_predictors, OLS_model)\n",
+    "        \n",
+    "        #removes variable with lowest p value\n",
+    "        index_td = all_predictors.index(lowestlu)\n",
+    "        del all_predictors[index_td]\n",
+    "\n",
+    "        #updates list of x values, not including variable with lowest pvalue\n",
+    "        x = train[all_predictors].values\n",
+    "\n",
+    "        #save new model in a list\n",
+    "        models.append(OLS_model)\n",
+    "        \n",
+    "    return models"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 529,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "predictors = ['forest', 'open_land', 'water', 'wetland', 'transitional', 'urban_public_institution', 'commercial', 'transportation', 'crop_land', \n",
+    "              'medium_density_residential', 'industrial']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 530,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "models = backwards_var_sel(y_train, predictors, train)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 534,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[  4.64695442e-04   8.80335223e-01   7.12102875e-01   8.68932453e-01\n",
+      "   7.94584109e-01   1.50125680e-01   1.19977070e-01   1.34718556e-01\n",
+      "   2.07066650e-02   9.20297269e-03   8.76450482e-01]\n"
+     ]
+    },
+    {
+     "ename": "TypeError",
+     "evalue": "'int' object is not iterable",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-534-8af6bde5244d>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mfor\u001b[0m \u001b[0mi\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mxrange\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmodels\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m     \u001b[0;32mprint\u001b[0m \u001b[0mmodels\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpvalues\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m     \u001b[0;32mfor\u001b[0m \u001b[0mj\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmodels\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpvalues\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      4\u001b[0m         \u001b[0;32mprint\u001b[0m \u001b[0mj\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mTypeError\u001b[0m: 'int' object is not iterable"
+     ]
+    }
+   ],
+   "source": [
+    "for i in xrange(len(models)):\n",
+    "    print models[i].pvalues\n",
+    "    for j in len(models[i].pvalues):\n",
+    "        print j"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 2",
+   "language": "python",
+   "name": "python2"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.13"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
