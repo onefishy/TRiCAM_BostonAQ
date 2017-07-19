@@ -8,11 +8,30 @@
 	      minZoom: 9,
   		ext: 'png'
   	  }).addTo(map);	
- 
-	  
+
+
+
+L.GridLayer.DebugCoords = L.GridLayer.extend({
+    createTile: function (coords, done) {
+    var tile = document.createElement('div');
+    tile.innerHTML = [coords.x, coords.y, coords.z].join(', ');
+    tile.style.outline = '1px solid red';
+
+    setTimeout(function () {
+        done(null, tile);	// Syntax is 'done(error, tile)'
+    }, 50 + Math.random() * 1500);
+
+    return tile;
+}
+});
+
+L.gridLayer.debugCoords = function(opts) {
+    return new L.GridLayer.DebugCoords(opts);
+};
+map.addLayer( L.gridLayer.debugCoords() );
     
 	  map.setZoom(12);
-	  $.getJSON("./data/rodents.geojson",function(data){
+	  $.getJSON("./data/data_test.geojson",function(data){
 	    var locations = data.features.map(function(rat) {
 	      // the heatmap plugin wants an array of each location
 	      var location = rat.geometry.coordinates.reverse();
@@ -23,6 +42,8 @@
 	    var heat = L.heatLayer(locations, { radius: 35 });
 	    map.addLayer(heat);
 	  });
+
+
 
 	  /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
