@@ -20,22 +20,16 @@
 }
 
 #side_bar {	
+  position: absolute;
 	opacity: .4;
-	width: 200px;
+	width: 20%;
 	height: 100%;
-	position: absolute; 
 	top: 0;
-	right: 0;
+  right: 0;
 	bottom: 0;
 	background: #c7c7c7; 
 	z-index: 2;
 }
-
-#content {	
-	position: relative; 
-	left: 20%;
-}
-
 
 #footer {
 	opacity: .4;
@@ -51,34 +45,57 @@
 
 #info {
 	opacity: 1;
-	width: 210px;
-	align-content: center;
-	position: absolute; 
+  align-content: center;
+  position: absolute;
+	max-width: 210px;
 	top: 10px;
-	right: 0;
 	z-index: 2;
+  right: 0;
+
 }
+
+#tour {
+	margin-left: 11;
+	margin-top: 10;
+	margin-bottom: 6px;
+  padding: 2px 25px 2px;
+	background-color: #e2e2e2;
+  color:  #938dd8;
+  border: none;
+	font-family:"Georgia", serif;
+}
+
+#logo {
+  padding-top: 20px;
+  padding-left: 0px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
 
 
 /*Advanced View */
 button {
 	font-family: Helvetica, Arial, sans-serif;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 3px;
-    margin-top: 3px;
-    display: block;
-    font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  display: block;
+  font-size: 16px;
 	border-radius: 4px;
-	opacity: .8;
-    background-color: #c7c7c7;
-    color: white;
-    width: 128px;
-    padding: 12px;
-    font-size: 16px;
-    left: 5px;
-    border: none;
-    cursor: pointer;
+	opacity: 1;
+  background-color: #c7c7c7;
+  color: white;
+  width: 128px;
+  padding: 12px;
+  font-size: 16px;
+  left: 5px;
+  border: none;
+  cursor: pointer;
 
 }
 
@@ -86,66 +103,32 @@ button:hover {
 	background-color: #add8e6
 }
 
-/* Inner buttons */
-inner-button {
-
-}
-
-label {
-	display: inline;
-}
 
 /* Checkboxes */
-.regular-checkbox {
-	display: none;
+
+label {
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+input {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  *overflow: hidden;
 }
 
-.regular-checkbox + label {
-	background-color: #fafafa;
-	border: 1px solid #cacece;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
-	padding: 9px;
-	border-radius: 3px;
-	display: inline-block;
-	position: relative;
+.program {
+	font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    padding: none;
+    list-style-position: outside;
 }
-
-.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
-	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
-}
-
-.regular-checkbox:checked + label {
-	background-color: #e9ecee;
-	border: 1px solid #adb8c0;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
-	color: #99a1a7;
-}
-
-.regular-checkbox:checked + label:after {
-	content: '\2714';
-	font-size: 14px;
-	position: absolute;
-	top: 0px;
-	left: 3px;
-	color: #99a1a7;
-}
-
-.tag {
-	text-align: center;
-    font-family: Helvetica, Arial, sans-serif;
-	width: 200px;
-	font-size: 12px;
-	position: relative;
-	top: 5px;
-	display: block;
-	float: left;
-}
-
-.button-holder {
-	float: left;
-}
-
-
 
 /* Advanced view button */
 .dropbtn {
@@ -166,7 +149,6 @@ label {
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
-    display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -181,7 +163,7 @@ label {
 
 .dropdown-content a {
     color: #add8e6;
-    padding: 12px 16px;
+    padding: 15%;
     text-decoration: none;
     display: block;
 }
@@ -191,20 +173,4 @@ label {
 .show {display:block;}
 
 
-#tour {
-	margin-left: 11;
-	margin-top: 10;
-	margin-bottom: 6px;
-    padding: 2px 25px 2px;
-	background-color: #e2e2e2;
-    color:  #938dd8;
-    border: none;
-	font-family:"Georgia", serif;
-}
 
-#logo {
-	padding-top: 20px;
-	padding-left: 0px;
-	width:128px;
-	height:128px;
-}
