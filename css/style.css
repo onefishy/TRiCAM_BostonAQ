@@ -21,7 +21,7 @@
 
 #side_bar {	
   position: absolute;
-	opacity: .4;
+	opacity: .9;
 	width: 20%;
 	height: 100%;
 	top: 0;
@@ -45,13 +45,11 @@
 
 #info {
 	opacity: 1;
-  align-content: center;
-  position: absolute;
-	max-width: 210px;
 	top: 10px;
+  max-width: 210px; 
+  position: absolute; /* Do not change this */
 	z-index: 2;
   right: 0;
-
 }
 
 #tour {
@@ -66,13 +64,17 @@
 }
 
 #logo {
+  /*display: block;*/
   padding-top: 20px;
-  padding-left: 0px;
-  position: relative;
+  align-self: center;
+  /*position: relative; 
   margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  overflow: hidden;
+  margin-right: auto;*/
+  max-width: 80%;
+  width: auto\9;
+  height: auto;
+  /*overflow: hidden;*/
+
 }
 
 
