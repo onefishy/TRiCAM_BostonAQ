@@ -29,6 +29,7 @@
 	bottom: 0;
 	background: #c7c7c7; 
 	z-index: 2;
+
 }
 
 #footer {
@@ -44,37 +45,19 @@
 }
 
 #info {
-	opacity: 1;
 	top: 10px;
-  max-width: 210px; 
-  position: absolute; /* Do not change this */
+  position: relative; 
 	z-index: 2;
-  right: 0;
-}
-
-#tour {
-	margin-left: 11;
-	margin-top: 10;
-	margin-bottom: 6px;
-  padding: 2px 25px 2px;
-	background-color: #e2e2e2;
-  color:  #938dd8;
-  border: none;
-	font-family:"Georgia", serif;
 }
 
 #logo {
-  /*display: block;*/
-  padding-top: 20px;
-  align-self: center;
-  /*position: relative; 
+  display: block;
   margin-left: auto;
-  margin-right: auto;*/
+  margin-right: auto;
+  padding-top: 20px;
   max-width: 80%;
   width: auto\9;
   height: auto;
-  /*overflow: hidden;*/
-
 }
 
 
@@ -88,16 +71,16 @@ button {
   margin-top: 3px;
   display: block;
   font-size: 16px;
-	border-radius: 4px;
+	border-radius: 10px;
 	opacity: 1;
-  background-color: #c7c7c7;
+  background-color: #656565;
   color: white;
-  width: 128px;
-  padding: 12px;
+  width: 60%;
   font-size: 16px;
   left: 5px;
   border: none;
   cursor: pointer;
+  margin: 0 auto;
 
 }
 
@@ -124,6 +107,7 @@ input {
   *overflow: hidden;
 }
 
+
 .program {
 	font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -134,13 +118,16 @@ input {
 
 /* Advanced view button */
 .dropbtn {
-    background-color: #c7c7c7;
+    background-color: #656565;
     color: white;
-    width: 128px;
+    width: 60%;
     padding: 12px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    display: block;
+    margin-top: 10px;
+
 }
 
 /* Dropdown button on hover & focus */
@@ -158,14 +145,14 @@ input {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
+    min-width: 20%;
     color: #add8e6;
-    padding: 15%;
+    padding: 5%;
     text-decoration: none;
     display: block;
 }

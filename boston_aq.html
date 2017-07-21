@@ -14,54 +14,44 @@
 	</head>
 	<body>	
 		<div id = "side_bar">			
-			<img src="img/AQ.png" alt="logo" id="logo">
-
-
-
-
-
-
-
-
-
+			<img src="img/AQ_blue.png" alt="logo" id="logo">
+			<div id = "info">
+				<button onclick="myFunction()" class="dropbtn">Take A Tour</button>
+				<div class="dropdown">
+					<button onclick="myFunction()" id = "adview" class="dropbtn">Advanced View</button>
+				    <div id="myDropdown" class="dropdown-content">
+				    	<ul class="nav">
+			    			<li class="program"><a href="#">Air Pollutants</a>
+			    			<div class="second nav">
+						  		<ul>
+								    <li><a href ="#">Sulfur Dioxide</a></li>
+								    <li><a href ="#">Nitrogen Dioxide</a></li>
+								    <li><a href ="#">Particulate Matter 2.5</a></li>
+						  </ul></div></li>
+						</ul>
+						<ul class ="nav2">
+							<li class="program"><a href="#">Health Concerns</a>
+			    			<div class="third nav">
+						  		<ul>
+								    <li><a href ="#">Respiratory</a></li>
+								    <li><a href ="#">Cardiovascular</a></li>
+								    <li><a href ="#">General</a></li>
+						  </ul></div></li>
+						</ul>
+						<ul class="nav3">
+							<li class="program"><a href="#">Layers</a>
+			    			<div class="fourth nav">
+						  		<ul>
+								    <li><a href ="#">Transit</a></li>
+								    <li><a href ="#">Cities</a></li>
+								    <li><a href ="#">Weather</a></li>
+						  </ul></div></li>
+						</ul>
+					    <li><a href="#">Time Bar</a></li>
+				    </div>
+				</div>
+			</div>	
 		</div>
-		<div id = "info">
-			
-			<button onclick="myFunction()" class="tour">Take A Tour</button>
-			<div class="dropdown">
-				<button onclick="myFunction()" class="dropbtn">Advanced View</button>
-			    <div id="myDropdown" class="dropdown-content">
-			    	<ul class="nav">
-		    			<li class="program"><a href="#">Air Pollutants</a>
-		    			<div class="second nav">
-					  		<ul>
-							    <li><a href ="#">Sulfur Dioxide</a></li>
-							    <li><a href ="#">Nitrogen Dioxide</a></li>
-							    <li><a href ="#">Particulate Matter 2.5</a></li>
-					  </ul></div></li>
-					</ul>
-					<ul class ="nav2">
-						<li class="program"><a href="#">Health Concerns</a>
-		    			<div class="third nav">
-					  		<ul>
-							    <li><a href ="#">Respiratory</a></li>
-							    <li><a href ="#">Cardiovascular</a></li>
-							    <li><a href ="#">General</a></li>
-					  </ul></div></li>
-					</ul>
-					<ul class="nav3">
-						<li class="program"><a href="#">Layers</a>
-		    			<div class="fourth nav">
-					  		<ul>
-							    <li><a href ="#">Transit</a></li>
-							    <li><a href ="#">Cities</a></li>
-							    <li><a href ="#">Weather</a></li>
-					  </ul></div></li>
-					</ul>
-				    <li><a href="#">Time Bar</a></li>
-			    </div>
-			</div>
-		</div>			
 		<div id = "map_area">
 			<div id = "map"></div>
 		    <div id='loading'></div>
