@@ -107,9 +107,17 @@ input {
   *overflow: hidden;
 }
 
+.drop {
+  list-style: none;
+  font-weight: normal;
+
+
+}
 
 .program {
-	font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    list-style: none;
+	  font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
     cursor: pointer;
     padding: none;
@@ -143,7 +151,8 @@ input {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
-    position: absolute;
+    text-align: center;
+    position: relative;
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
