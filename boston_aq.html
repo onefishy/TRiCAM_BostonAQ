@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta charset="utf-8">
 <html>
 	<head>
 		<title> AQ Visualization </title>
@@ -12,40 +13,40 @@
 		<script src="data/data_test.geojson"></script>
 		<meta charset="utf-8">
 	</head>
-	<body>	
-		<div id = "side_bar">			
+	<body>
+		<div id = "side_bar">		
+			<div id = "graph_window"> Air Quality Metrics 
+				<script src="https://d3js.org/d3.v4.min.js"></script>
+			</div>		
 			<img src="img/AQ_blue.png" alt="logo" id="logo">
 			<div id = "info">
-				<button onclick="myFunction()" class="dropbtn">Take A Tour</button>
+				<button onclick="myTour()" class="dropbtn">Take A Tour</button>
 				<div class="dropdown">
 					<button onclick="myFunction()" id = "adview" class="dropbtn">Advanced View</button>
 				    <div id="myDropdown" class="dropdown-content">
-				    	<ul class = "nav">
+				    	<ul>
 			    			<li class="program"><a href="#">Air Pollutants</a>
-			    			<div>
 						  		<ul>
 								    <li class= "drop" ><a href ="#">Sulfur Dioxide</a></li>
 								    <li class= "drop" ><a href ="#">Nitrogen Dioxide</a></li>
 								    <li class= "drop" > <a href ="#">Particulate Matter 2.5</a></li>
-						  </ul></div></li>
+						  </ul></li>
 						</ul>
-						<ul class = "nav2"> 
+						<ul> 
 							<li class="program"><a href="#">Health Concerns</a>
-			    			<div>
 						  		<ul>
 								    <li class= "drop" ><a href ="#">Respiratory</a></li>
 								    <li class= "drop" ><a href ="#">Cardiovascular</a></li>
 								    <li class= "drop" ><a href ="#">General</a></li>
-						  </ul></div></li>
+						  </ul></li>
 						</ul>
-						<ul class = "nav3">
+						<ul>
 							<li class="program"><a href="#">Layers</a>
-			    			<div>
 						  		<ul>
 								    <li class= "drop" ><a href ="#">Transit</a></li>
 								    <li class= "drop" ><a href ="#">Cities</a></li>
 								    <li class= "drop" ><a href ="#">Weather</a></li>
-						  </ul></div></li>
+						  </ul></li>
 						</ul>
 					    <li class = "program"> <a href="#">Time Bar</a></li>
 				    </div>
@@ -58,5 +59,6 @@
 		</div>
 		<div id = "footer"> footer </div>
 		<script src="js/map.js"></script>
+		<script src="js/graph.js"></script>		
 	</body>
 </html>

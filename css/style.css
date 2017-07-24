@@ -6,48 +6,68 @@
 
 
 #map {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	float: right;
-	left: 0;
-	bottom: 50px; /* Set this to the height of the footer */
-	right: 300px; /* Set this to the width of the nav bar */
-	background-color: #e1e1e1;
-	z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  float: right;
+  left: 0;
+  bottom: 50px; /* Set this to the height of the footer */
+  right: 300px; /* Set this to the width of the nav bar */
+  background-color: #e1e1e1;
+  z-index: 0;
 
 }
 
-#side_bar {	
+#graph_window {
   position: absolute;
-	opacity: .9;
-	width: 20%;
-	height: 100%;
-	top: 0;
+  opacity: .9;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
   right: 0;
-	bottom: 0;
-	background: #c7c7c7; 
-	z-index: 2;
+  background: #656565;
+  z-index: 4;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  display: block;
+  padding-top: 10px;
+
+
+}
+
+#side_bar { 
+  position: absolute;
+  opacity: .9;
+  width: 20%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #c7c7c7; 
+  z-index: 2;
+
 
 }
 
 #footer {
-	opacity: .4;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 30px; 
-	overflow: hidden; /* Disables scrollbars on the header frame. To enable scrollbars, change "hidden" to "scroll" */
-	background: #c7c7c7;
-	z-index: 1;
+  opacity: .4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px; 
+  overflow: hidden; /* Disables scrollbars on the header frame. To enable scrollbars, change "hidden" to "scroll" */
+  background: #c7c7c7;
+  z-index: 1;
 }
 
 #info {
-	top: 10px;
+  top: 10px;
   position: relative; 
-	z-index: 2;
+  z-index: 2;
 }
 
 #logo {
@@ -64,15 +84,15 @@
 
 /*Advanced View */
 button {
-	font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   text-align: center;
   text-decoration: none;
   margin-bottom: 3px;
   margin-top: 3px;
   display: block;
   font-size: 16px;
-	border-radius: 10px;
-	opacity: 1;
+  border-radius: 10px;
+  opacity: 1;
   background-color: #656565;
   color: white;
   width: 60%;
@@ -85,7 +105,7 @@ button {
 }
 
 button:hover {
-	background-color: #add8e6
+  background-color: #add8e6
 }
 
 
@@ -107,21 +127,34 @@ input {
   *overflow: hidden;
 }
 
+/* chart styling */
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+  }
+
+
+
+/* end chart styling */
+
+
 .drop {
   list-style: none;
   font-weight: normal;
-
+  padding: none;
 
 }
 
 .program {
     font-weight: bold;
     list-style: none;
-	  font-family: Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
     cursor: pointer;
     padding: none;
     list-style-position: outside;
+
 }
 
 /* Advanced view button */
@@ -150,6 +183,8 @@ input {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
+    margin: auto;
+    width: 50%;
     display: none;
     text-align: center;
     position: relative;

@@ -51,18 +51,17 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-$(".program").on('click',function () {
-  $('li div ul').toggle('');
+
+// $(".program").on('click',function () {
+//   $('li ul').toggle('');
+// });
+
+//this allows the drops to function independently
+$('li.program').click(function() {
+   $('li.program').not(this).find('ul');
+   $(this).find('ul').toggle();
 });
-$('.nav > li div ul li a').click(function(e) {
-  e.stopPropagation();
-});
-$('.nav2 > li div ul li a').click(function(e) {
-  e.stopPropagation();
-});
-$('.nav3 > li div ul li a').click(function(e) {
-  e.stopPropagation();
-});
+		
 
 // Close the dropdown menu if the user clicks outside of it
 // window.onclick = function(event) {
