@@ -11,13 +11,13 @@
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="js/leaflet.heat.js"></script>
 		<script src="data/data_test.geojson"></script>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
 		<meta charset="utf-8">
 	</head>
-	<body>
-		<div id = "side_bar">		
+	<body>		
+		<div id = "side_bar">
 			<div id = "graph_window"> Air Quality Metrics 
-				<script src="https://d3js.org/d3.v4.min.js"></script>
-			</div>		
+			</div>				
 			<img src="img/AQ_blue.png" alt="logo" id="logo">
 			<div id = "info">
 				<button onclick="myTour()" class="dropbtn">Take A Tour</button>
@@ -55,7 +55,7 @@
 		</div>
 		<div id = "map_area">
 			<div id = "map"></div>
-		    <div id='loading'></div>
+		   <div id='loading'></div>
 		</div>
 		<div id = "footer"> footer </div>
 		<script src="js/map.js"></script>
