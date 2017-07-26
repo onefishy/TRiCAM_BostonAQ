@@ -1,0 +1,5 @@
+,Parameter Name,Site_keys,LU,ppm
+0,Nitrogen dioxide (NO2),[ 41.771444 -72.679923],"{'Commercial and Services': 0.68, 'Other urban or built-up land': 0.05, 'Transportation, communications and services': 0.27}",0.013570931
+1,Nitrogen dioxide (NO2),[ 41.784722 -72.631667],"{'Commercial and Services': 0.58, 'Residential': 0.38, 'Forested wetland': 0.04}",0.016113359
+2,Nitrogen dioxide (NO2),[ 41.821342 -73.297257],{'Deciduous forest land': 1.0},0.008971237
+3,Nitrogen dioxide (NO2),[ 41.3014   -72.902871],"{'Streams and canals': 0.21084337349397592, 'Bays and estuaries': 0.08433734939759036, 'Transportation, communications and services': 0.463855421686747, 'Industrial': 0.24096385542168675}",0.0034958730000000005

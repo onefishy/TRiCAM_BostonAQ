@@ -1,0 +1,3 @@
+,Parameter Name,Site_keys,LU,ppm
+0,Nitrogen dioxide (NO2),[  45.496641 -122.602877],{'Residential': 1.0},0.012621871000000002
+1,Nitrogen dioxide (NO2),[  45.393497 -122.747894],"{'Commercial and Services': 0.24, 'Residential': 0.28, 'Industrial': 0.35, 'Other urban or built-up land': 0.04, 'Transportation, communications and services': 0.09}",0.008711014000000001

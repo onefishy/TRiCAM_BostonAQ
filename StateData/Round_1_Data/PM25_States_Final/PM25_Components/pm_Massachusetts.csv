@@ -1,0 +1,5 @@
+,Parameter Name,Site_keys,LU,ppm
+0,PM2.5 - combined,[ 41.975804 -70.023598],"{'Mixed forest land': 0.85, 'Evergreen forest land': 0.15}",0.007255728
+1,PM2.5 - combined,[ 41.330469 -70.785225],"{'Shrub-brushland rangeland': 0.4377880184331797, 'Bays and estuaries': 0.5391705069124424, 'Lakes': 0.02304147465437788}",0.00648362
+2,PM2.5 - combined,[ 42.19438  -72.555112],"{'Commercial and Services': 0.87, 'Residential': 0.13}",0.013340548
+3,PM2.5 - combined,[ 42.3295 -71.0826],"{'Commercial and Services': 0.2, 'Residential': 0.225, 'Other urban or built-up land': 0.075, 'Transportation, communications and services': 0.5}",0.03801443

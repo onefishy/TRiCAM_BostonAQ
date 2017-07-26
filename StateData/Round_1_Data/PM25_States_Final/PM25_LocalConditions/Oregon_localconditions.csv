@@ -1,0 +1,15 @@
+,Parameter Name,Site_keys,LU,ppm
+0,PM2.5 - Local Conditions,[  44.299787 -120.844773],"{'Commercial and Services': 0.09174311926605505, 'Residential': 0.908256880733945}",0.006423585
+1,PM2.5 - Local Conditions,[  43.58925 -119.04872],"{'Commercial and Services': 0.16666666666666666, 'Mixed urban or built-up land': 0.2222222222222222, 'Other urban or built-up land': 0.07407407407407407, 'Residential': 0.5370370370370371}",0.006862711999999999
+2,PM2.5 - Local Conditions,[  42.31411 -122.87923],"{'Residential': 0.97, 'Orchards, groves, vineyards, nurseries..': 0.03}",0.006808360500000001
+3,PM2.5 - Local Conditions,[  42.434139 -123.348466],"{'Residential': 0.92, 'Transportation, communications and services': 0.08}",0.0058639339999999995
+4,PM2.5 - Local Conditions,[  42.190296 -121.731369],"{'Commercial and Services': 0.07964601769911504, 'Residential': 0.8849557522123894, 'Other urban or built-up land': 0.035398230088495575}",0.008142373
+5,PM2.5 - Local Conditions,[  42.189215 -120.353969],"{'Commercial and Services': 0.18, 'Residential': 0.46, 'Industrial': 0.08, 'Cropland and pasture': 0.02, 'Transitional areas': 0.26}",0.006687603
+6,PM2.5 - Local Conditions,[  44.067224 -123.141352],"{'Commercial and Services': 0.37, 'Residential': 0.56, 'Industrial': 0.07}",0.005800826
+7,PM2.5 - Local Conditions,[  44.026312 -123.083737],"{'Commercial and Services': 0.1, 'Residential': 0.61, 'Other urban or built-up land': 0.29}",0.005478437500000001
+8,PM2.5 - Local Conditions,[  44.046696 -123.017704],"{'Residential': 0.22, 'Industrial': 0.75, 'Reservoirs': 0.03}",0.004706897000000001
+9,PM2.5 - Local Conditions,[  43.744352 -122.480487],"{'Commercial and Services': 0.14507772020725387, 'Residential': 0.30569948186528495, 'Forested wetland': 0.031088082901554404, 'Evergreen forest land': 0.5181347150259067}",0.005701667
+10,PM2.5 - Local Conditions,[  43.799501 -123.053487],"{'Commercial and Services': 0.33, 'Residential': 0.67}",0.0068008619999999995
+11,PM2.5 - Local Conditions,[  45.496641 -122.602877],{'Residential': 1.0},0.006236752
+12,PM2.5 - Local Conditions,[  45.528501 -122.972398],"{'Commercial and Services': 0.1893939393939394, 'Residential': 0.7575757575757576, 'Other urban or built-up land': 0.05303030303030303}",0.005627048999999999
+13,PM2.5 - Local Conditions,[  45.393497 -122.747894],"{'Commercial and Services': 0.24, 'Residential': 0.28, 'Industrial': 0.35, 'Other urban or built-up land': 0.04, 'Transportation, communications and services': 0.09}",0.0059616669999999995

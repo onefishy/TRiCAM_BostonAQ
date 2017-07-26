@@ -1,0 +1,15 @@
+,Parameter Name,Site_keys,LU,ppm
+0,PM2.5 - combined,[  45.28845  -121.782775],{'Evergreen forest land': 1.0},0.003858518
+1,PM2.5 - combined,[  44.299787 -120.844773],"{'Commercial and Services': 0.09174311926605505, 'Residential': 0.908256880733945}",0.002380737
+2,PM2.5 - combined,[  42.104278 -123.681083],"{'Residential': 0.11, 'Industrial': 0.09, 'Transportation, communications and services': 0.205, 'Evergreen forest land': 0.5, 'Shrub-brushland rangeland': 0.095}",0.002710934
+3,PM2.5 - combined,[  42.909851 -122.140861],"{'Bare exposed rock': 0.1452991452991453, 'Evergreen forest land': 0.8547008547008547}",0.003127917
+4,PM2.5 - combined,[  44.19982  -122.044547],{'Evergreen forest land': 1.0},0.003935222
+5,PM2.5 - combined,[  45.496641 -122.602877],{'Residential': 1.0},0.003291933
+6,PM2.5 - combined,[  45.56137 -122.6679 ],"{'Commercial and Services': 0.04, 'Residential': 0.96}",0.002161799
+7,PM2.5 - combined,[  45.577175 -122.71775 ],"{'Commercial and Services': 0.04, 'Residential': 0.76, 'Industrial': 0.2}",5.81E-07
+8,PM2.5 - combined,[  45.599907 -122.758362],"{'Residential': 0.88, 'Industrial': 0.04, 'Other urban or built-up land': 0.08}",0.002415914
+9,PM2.5 - combined,[  45.224748 -118.513962],"{'Herbaceous Rangeland': 0.2366412213740458, 'Evergreen forest land': 0.7633587786259542}",0.019418218
+10,PM2.5 - combined,[  45.339    -118.095206],"{'Commercial and Services': 0.01, 'Residential': 0.83, 'Cropland and pasture': 0.01, 'Transportation, communications and services': 0.05, 'Mixed urban or built-up land': 0.1}",0.003218165
+11,PM2.5 - combined,[  45.079864 -116.844808],{'Evergreen forest land': 1.0},0.001204465
+12,PM2.5 - combined,[  45.528501 -122.972398],"{'Commercial and Services': 0.1893939393939394, 'Residential': 0.7575757575757576, 'Other urban or built-up land': 0.05303030303030303}",2.41E-06
+13,PM2.5 - combined,[  45.393497 -122.747894],"{'Commercial and Services': 0.24, 'Residential': 0.28, 'Industrial': 0.35, 'Other urban or built-up land': 0.04, 'Transportation, communications and services': 0.09}",3.05E-06

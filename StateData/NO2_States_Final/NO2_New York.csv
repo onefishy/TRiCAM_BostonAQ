@@ -1,0 +1,12 @@
+,Parameter Name,Site_keys,LU,ppm
+0,Nitrogen dioxide (NO2),[ 40.831767 -73.903748],"{'Residential': 0.5, 'Transportation, communications and services': 0.5}",0.025269978
+1,Nitrogen dioxide (NO2),[ 42.876907 -78.809526],"{'Commercial and Services': 0.35, 'Residential': 0.44, 'Other urban or built-up land': 0.11, 'Transportation, communications and services': 0.1}",0.039677717
+2,Nitrogen dioxide (NO2),[ 40.73277 -73.94722],"{'Commercial and Services': 0.28, 'Residential': 0.07, 'Industrial': 0.54, 'Transportation, communications and services': 0.11}",0.023793213
+3,Nitrogen dioxide (NO2),[ 40.671953 -73.977823],"{'Commercial and Services': 0.24193548387096775, 'Residential': 0.7096774193548387, 'Other urban or built-up land': 0.04838709677419355}",0.037748234000000006
+4,Nitrogen dioxide (NO2),[ 40.74316 -73.58549],"{'Commercial and Services': 0.305, 'Other urban or built-up land': 0.195, 'Transportation, communications and services': 0.5}",0.048915207
+5,Nitrogen dioxide (NO2),[ 40.739546 -73.985694],"{'Commercial and Services': 0.02, 'Mixed urban or built-up land': 0.98}",0.027272238
+6,Nitrogen dioxide (NO2),[ 43.045345 -76.147425],"{'Commercial and Services': 0.92, 'Transportation, communications and services': 0.08}",0.036915387
+7,Nitrogen dioxide (NO2),[ 40.735935 -73.816523],"{'Commercial and Services': 0.165, 'Residential': 0.335, 'Transportation, communications and services': 0.5}",0.030986180999999998
+8,Nitrogen dioxide (NO2),[ 40.777601 -73.908192],"{'Commercial and Services': 0.004975124378109453, 'Residential': 0.48756218905472637, 'Industrial': 0.009950248756218905, 'Transportation, communications and services': 0.4975124378109453}",0.021819136
+9,Nitrogen dioxide (NO2),[ 40.59664 -74.12525],"{'Commercial and Services': 0.31, 'Residential': 0.25, 'Deciduous forest land': 0.44}",0.023343608000000002
+10,Nitrogen dioxide (NO2),[ 41.05192 -73.76366],"{'Commercial and Services': 0.13157894736842105, 'Residential': 0.2982456140350877, 'Deciduous forest land': 0.4473684210526316, 'Reservoirs': 0.12280701754385964}",0.021034393999999998

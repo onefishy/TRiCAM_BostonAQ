@@ -1,0 +1,10 @@
+,Parameter Name,Site_keys,LU,ppm
+0,Sulfur dioxide,[ 39.154722 -75.529444],"{'Commercial and Services': 0.07, 'Residential': 0.51, 'Cropland and pasture': 0.42}",0.001658404
+1,Sulfur dioxide,[ 39.670945 -75.746879],"{'Commercial and Services': 0.3, 'Residential': 0.16, 'Cropland and pasture': 0.54}",0.004153403
+2,Sulfur dioxide,[ 39.574834 -75.618261],"{'Cropland and pasture': 0.66, 'Nonforested wetland': 0.34}",0.006133912000000001
+3,Sulfur dioxide,[ 39.761111 -75.491944],"{'Commercial and Services': 0.24, 'Residential': 0.3, 'Bays and estuaries': 0.04, 'Nonforested wetland': 0.15, 'Transitional areas': 0.27}",0.0031339560000000002
+4,Sulfur dioxide,[ 39.716128 -75.52768 ],"{'Industrial': 0.95, 'Nonforested wetland': 0.05}",0.002436444
+5,Sulfur dioxide,[ 39.631223 -75.613538],"{'Commercial and Services': 0.11, 'Cropland and pasture': 0.69, 'Nonforested wetland': 0.14, 'Evergreen forest land': 0.06}",0.009484174000000001
+6,Sulfur dioxide,[ 39.757891 -75.546034],"{'Commercial and Services': 0.11, 'Residential': 0.6, 'Other urban or built-up land': 0.19, 'Transportation, communications and services': 0.1}",0.011205739
+7,Sulfur dioxide,[ 39.812335 -75.455196],"{'Commercial and Services': 0.16, 'Residential': 0.27, 'Industrial': 0.15, 'Transportation, communications and services': 0.41, 'Transitional areas': 0.01}",0.004432205000000001
+8,Sulfur dioxide,[ 38.651225 -75.612705],"{'Commercial and Services': 0.4, 'Residential': 0.53, 'Cropland and pasture': 0.07}",0.006707333

@@ -1,0 +1,7 @@
+,Parameter Name,Site_keys,LU,ppm
+0,PM2.5 - combined,[ 41.170833 -73.194722],"{'Commercial and Services': 0.14, 'Residential': 0.63, 'Industrial': 0.04, 'Transportation, communications and services': 0.19}",0.007778182
+1,PM2.5 - combined,[ 41.399167 -73.443056],"{'Commercial and Services': 0.5, 'Residential': 0.39, 'Transportation, communications and services': 0.11}",0.042587206
+2,PM2.5 - combined,[ 41.771444 -72.679923],"{'Commercial and Services': 0.68, 'Other urban or built-up land': 0.05, 'Transportation, communications and services': 0.27}",0.00152468
+3,PM2.5 - combined,[ 41.784722 -72.631667],"{'Commercial and Services': 0.58, 'Residential': 0.38, 'Forested wetland': 0.04}",0.013250321
+4,PM2.5 - combined,[ 41.821342 -73.297257],{'Deciduous forest land': 1.0},0.005732735
+5,PM2.5 - combined,[ 41.3014   -72.902871],"{'Streams and canals': 0.21084337349397592, 'Bays and estuaries': 0.08433734939759036, 'Transportation, communications and services': 0.463855421686747, 'Industrial': 0.24096385542168675}",0.013850396

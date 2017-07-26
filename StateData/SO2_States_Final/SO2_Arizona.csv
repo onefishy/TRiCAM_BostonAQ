@@ -1,0 +1,16 @@
+,Parameter Name,Site_keys,LU,ppm
+0,Sulfur dioxide,[  31.364722 -109.594444],"{'Commercial and Services': 0.05555555555555555, 'Shrub-brushland rangeland': 0.6851851851851852, 'Transportation, communications and services': 0.10185185185185185, 'Mixed rangeland': 0.08333333333333333, 'Residential': 0.07407407407407407}",0.012756833
+1,Sulfur dioxide,[  31.365556 -109.583611],"{'Shrub-brushland rangeland': 0.9611650485436893, 'Mixed rangeland': 0.009708737864077669, 'Other agricultural land': 0.02912621359223301}",0.014479282000000001
+2,Sulfur dioxide,[  33.41     -110.846944],"{'Commercial and Services': 0.0861244019138756, 'Shrub-brushland rangeland': 0.4784688995215311, 'Residential': 0.4354066985645933}",0.000555892
+3,Sulfur dioxide,[  33.419167 -110.826111],"{'Shrub-brushland rangeland': 0.8620689655172413, 'Other urban or built-up land': 0.12931034482758622, 'Residential': 0.008620689655172414}",0.00156396
+4,Sulfur dioxide,[  33.404722 -110.817222],"{'Shrub-brushland rangeland': 0.819672131147541, 'Residential': 0.18032786885245902}",0.008538499
+5,Sulfur dioxide,[  33.028676 -110.809551],{'Shrub-brushland rangeland': 1.0},0.012127529
+6,Sulfur dioxide,[  33.006179 -110.785797],"{'Shrub-brushland rangeland': 0.25, 'Industrial': 0.09, 'Residential': 0.66}",0.01605271
+7,Sulfur dioxide,[  33.385278 -110.866389],{'Shrub-brushland rangeland': 1.0},0.037578638
+8,Sulfur dioxide,[  33.089507 -109.287571],{'Shrub-brushland rangeland': 1.0},0.032960675
+9,Sulfur dioxide,[  33.010278 -109.363889],"{'Shrub-brushland rangeland': 0.7575757575757576, 'Industrial': 0.24242424242424243}",0.028544565999999997
+10,Sulfur dioxide,[  33.45793 -112.04601],"{'Commercial and Services': 0.16379310344827586, 'Residential': 0.8362068965517241}",0.012564953
+11,Sulfur dioxide,[  32.233409 -110.753417],{'Shrub-brushland rangeland': 1.0},0.005447339000000001
+12,Sulfur dioxide,[  32.204411 -110.878067],"{'Commercial and Services': 0.19491525423728814, 'Residential': 0.8050847457627118}",0.0030654659999999998
+13,Sulfur dioxide,[  32.382036 -112.857453],"{'Shrub-brushland rangeland': 0.5181347150259067, 'Industrial': 0.17098445595854922, 'Residential': 0.31088082901554404}",0.006377234
+14,Sulfur dioxide,[  32.598611 -110.633611],"{'Commercial and Services': 0.25903614457831325, 'Shrub-brushland rangeland': 0.6024096385542169, 'Other urban or built-up land': 0.012048192771084338, 'Residential': 0.12650602409638553}",0.005551085

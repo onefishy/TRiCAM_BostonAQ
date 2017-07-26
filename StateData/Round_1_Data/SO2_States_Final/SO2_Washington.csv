@@ -1,0 +1,4 @@
+,Parameter Name,Site_keys,LU,ppm
+0,Sulfur dioxide,[  48.29786 -124.62491],{'Evergreen forest land': 1.0},0.00061928
+1,Sulfur dioxide,[  47.568236 -122.308628],"{'Commercial and Services': 0.051194539249146756, 'Residential': 0.3412969283276451, 'Other urban or built-up land': 0.21843003412969283, 'Reservoirs': 0.04778156996587031, 'Transportation, communications and services': 0.3412969283276451}",0.000152199
+2,Sulfur dioxide,[  48.52059 -122.61428],"{'Commercial and Services': 0.4, 'Residential': 0.4, 'Bays and estuaries': 0.2}",0.00048314600000000005

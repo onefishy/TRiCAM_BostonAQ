@@ -1,0 +1,132 @@
+,Parameter Name,Site_keys,LU,ppm
+0,Suspended particulate (TSP),[ 40.422847 -79.97283 ],"{'Residential': 0.8620689655172413, 'Other urban or built-up land': 0.13793103448275862}",61.13333299999999
+1,Suspended particulate (TSP),[ 40.41368  -79.941162],"{'Residential': 0.86, 'Industrial': 0.05, 'Deciduous forest land': 0.09}",60.157894999999996
+2,Suspended particulate (TSP),[ 40.427569 -79.925884],{'Residential': 1.0},70.55555600000001
+3,Suspended particulate (TSP),[ 40.323768 -79.868062],"{'Commercial and Services': 0.07317073170731707, 'Residential': 0.6260162601626016, 'Deciduous forest land': 0.11382113821138211, 'Mixed forest land': 0.18699186991869918}",54.758621
+4,Suspended particulate (TSP),[ 40.547797 -79.757813],"{'Residential': 0.44, 'Industrial': 0.19, 'Deciduous forest land': 0.37}",70.866667
+5,Suspended particulate (TSP),[ 40.317848 -79.863659],"{'Residential': 0.47, 'Mixed forest land': 0.53}",60.058824
+6,Suspended particulate (TSP),[ 40.395021 -79.785315],"{'Residential': 0.31, 'Deciduous forest land': 0.62, 'Transportation, communications and services': 0.07}",54.85
+7,Suspended particulate (TSP),[ 40.537289 -79.760048],"{'Residential': 0.15254237288135594, 'Deciduous forest land': 0.847457627118644}",71.155172
+8,Suspended particulate (TSP),[ 40.610899 -79.74616 ],"{'Residential': 0.78, 'Deciduous forest land': 0.15, 'Other urban or built-up land': 0.07}",65.946128
+9,Suspended particulate (TSP),[ 40.402328 -79.860973],"{'Commercial and Services': 0.29, 'Residential': 0.61, 'Deciduous forest land': 0.03, 'Industrial': 0.05, 'Other urban or built-up land': 0.02}",140.180328
+10,Suspended particulate (TSP),[ 40.416736 -79.884216],"{'Residential': 0.82, 'Industrial': 0.18}",75.360656
+11,Suspended particulate (TSP),[ 40.396736 -79.863382],"{'Commercial and Services': 0.31, 'Residential': 0.09, 'Streams and canals': 0.24, 'Industrial': 0.36}",49.333333
+12,Suspended particulate (TSP),[ 40.352569 -79.926716],"{'Residential': 0.32, 'Deciduous forest land': 0.09, 'Transportation, communications and services': 0.58, 'Mixed forest land': 0.01}",89.583333
+13,Suspended particulate (TSP),[ 40.287848 -79.884493],{'Residential': 1.0},79.372881
+14,Suspended particulate (TSP),[ 40.372013 -79.848381],"{'Residential': 0.96, 'Industrial': 0.04}",151.48275900000002
+15,Suspended particulate (TSP),[ 40.547011 -79.78366 ],"{'Commercial and Services': 0.11, 'Residential': 0.83, 'Deciduous forest land': 0.06}",80.491228
+16,Suspended particulate (TSP),[ 40.499767 -80.071337],"{'Residential': 0.68, 'Streams and canals': 0.25, 'Industrial': 0.07}",72.10714300000001
+17,Suspended particulate (TSP),[ 40.438402 -80.068666],"{'Commercial and Services': 0.25203252032520324, 'Residential': 0.7479674796747967}",69.0
+18,Suspended particulate (TSP),[ 40.375644 -80.169943],"{'Commercial and Services': 0.17, 'Strip mines, quarries and gravel pits': 0.02, 'Deciduous forest land': 0.18, 'Cropland and pasture': 0.63}",66.704918
+19,Suspended particulate (TSP),[ 40.441179 -80.240338],"{'Residential': 0.48514851485148514, 'Deciduous forest land': 0.19801980198019803, 'Transportation, communications and services': 0.22772277227722773, 'Evergreen forest land': 0.0891089108910891}",77.724138
+20,Suspended particulate (TSP),[ 40.635019 -80.444223],"{'Commercial and Services': 0.21, 'Residential': 0.36, 'Industrial': 0.12, 'Deciduous forest land': 0.31}",71.457627
+21,Suspended particulate (TSP),[ 40.685019 -80.324775],"{'Residential': 0.52, 'Streams and canals': 0.45, 'Evergreen forest land': 0.03}",60.26785699999999
+22,Suspended particulate (TSP),[ 40.701407 -80.28033 ],"{'Commercial and Services': 0.35, 'Residential': 0.03, 'Streams and canals': 0.16, 'Industrial': 0.28, 'Transportation, communications and services': 0.18}",66.868946
+23,Suspended particulate (TSP),[ 40.591686 -80.22755 ],"{'Commercial and Services': 0.44, 'Residential': 0.56}",78.533333
+24,Suspended particulate (TSP),[ 40.630019 -80.50867 ],"{'Reservoirs': 0.047619047619047616, 'Mixed forest land': 0.9523809523809523}",65.377049
+25,Suspended particulate (TSP),[ 40.765018 -80.321442],"{'Commercial and Services': 0.19, 'Residential': 0.81}",53.147541000000004
+26,Suspended particulate (TSP),[ 40.350833 -75.935278],"{'Residential': 0.77, 'Industrial': 0.23}",63.79661
+27,Suspended particulate (TSP),[ 40.337789 -75.946856],"{'Commercial and Services': 0.34, 'Residential': 0.45, 'Industrial': 0.21}",69.711864
+28,Suspended particulate (TSP),[ 40.332232 -75.628513],"{'Commercial and Services': 0.1, 'Residential': 0.89, 'Cropland and pasture': 0.01}",54.557377
+29,Suspended particulate (TSP),[ 40.556676 -75.977967],"{'Commercial and Services': 0.17, 'Residential': 0.66, 'Cropland and pasture': 0.17}",65.081967
+30,Suspended particulate (TSP),[ 40.324455 -75.930745],"{'Commercial and Services': 0.79, 'Residential': 0.18, 'Industrial': 0.03}",70.180328
+31,Suspended particulate (TSP),[ 40.403056 -75.928611],"{'Commercial and Services': 0.07, 'Residential': 0.15, 'Industrial': 0.09, 'Cropland and pasture': 0.65, 'Strip mines, quarries and gravel pits': 0.04}",61.032787
+32,Suspended particulate (TSP),[ 40.377222 -75.914444],"{'Residential': 0.72, 'Industrial': 0.23, 'Deciduous forest land': 0.05}",85.7
+33,Suspended particulate (TSP),[ 40.316401 -76.009636],"{'Commercial and Services': 0.3, 'Residential': 0.42, 'Cropland and pasture': 0.28}",73.916667
+34,Suspended particulate (TSP),[ 40.535278 -78.370833],"{'Commercial and Services': 0.1292517006802721, 'Residential': 0.1292517006802721, 'Deciduous forest land': 0.6802721088435374, 'Other urban or built-up land': 0.047619047619047616, 'Transportation, communications and services': 0.013605442176870748}",68.18333299999999
+35,Suspended particulate (TSP),[ 40.515572 -78.400824],"{'Commercial and Services': 0.4479638009049774, 'Deciduous forest land': 0.45248868778280543, 'Industrial': 0.004524886877828055, 'Other urban or built-up land': 0.09502262443438914}",59.596154000000006
+36,Suspended particulate (TSP),[ 41.762498 -76.443254],"{'Commercial and Services': 0.19, 'Residential': 0.37, 'Streams and canals': 0.2, 'Transportation, communications and services': 0.24}",53.12
+37,Suspended particulate (TSP),[ 40.107222 -74.882222],"{'Commercial and Services': 0.27, 'Residential': 0.73}",57.351852
+38,Suspended particulate (TSP),[ 40.272231 -75.130164],"{'Commercial and Services': 0.16911764705882354, 'Cropland and pasture': 0.7352941176470589, 'Other urban or built-up land': 0.09558823529411764}",65.896552
+39,Suspended particulate (TSP),[ 41.00557  -79.716976],{'Deciduous forest land': 1.0},73.103448
+40,Suspended particulate (TSP),[ 40.342797 -78.935564],"{'Residential': 0.12352941176470589, 'Industrial': 0.12941176470588237, 'Deciduous forest land': 0.5882352941176471, 'Mixed urban or built-up land': 0.1588235294117647}",126.421053
+41,Suspended particulate (TSP),[ 40.325852 -78.916952],"{'Commercial and Services': 0.30319148936170215, 'Residential': 0.05319148936170213, 'Industrial': 0.11170212765957446, 'Deciduous forest land': 0.5319148936170213}",82.20339
+42,Suspended particulate (TSP),[ 40.346686 -78.886396],"{'Residential': 0.43147208121827413, 'Industrial': 0.06091370558375635, 'Deciduous forest land': 0.5076142131979695}",75.346939
+43,Suspended particulate (TSP),[ 40.299464 -78.906952],"{'Residential': 0.4784688995215311, 'Deciduous forest land': 0.5167464114832536, 'Other urban or built-up land': 0.004784688995215311}",56.733332999999995
+44,Suspended particulate (TSP),[ 40.803056 -75.608333],"{'Commercial and Services': 0.2248062015503876, 'Residential': 0.5968992248062015, 'Deciduous forest land': 0.17829457364341086}",69.105263
+45,Suspended particulate (TSP),[ 40.793901 -77.859416],"{'Commercial and Services': 0.73, 'Residential': 0.27}",69.04918
+46,Suspended particulate (TSP),[ 39.964736 -75.607125],"{'Commercial and Services': 0.02, 'Residential': 0.96, 'Industrial and commercial complexes': 0.02}",63.576271
+47,Suspended particulate (TSP),[ 39.972222 -75.813056],"{'Commercial and Services': 0.05, 'Residential': 0.3, 'Industrial': 0.11, 'Deciduous forest land': 0.54}",72.035714
+48,Suspended particulate (TSP),[ 40.139456 -75.520732],"{'Commercial and Services': 0.04, 'Residential': 0.65, 'Industrial': 0.19, 'Cropland and pasture': 0.12}",74.634615
+49,Suspended particulate (TSP),[ 41.356121 -79.217236],"{'Deciduous forest land': 0.9900990099009901, 'Evergreen forest land': 0.009900990099009901}",56.098361
+50,Suspended particulate (TSP),[ 41.131118 -77.433567],"{'Residential': 0.2, 'Cropland and pasture': 0.58, 'Transportation, communications and services': 0.22}",65.916667
+51,Suspended particulate (TSP),[ 40.246404 -76.897721],"{'Commercial and Services': 0.38, 'Residential': 0.62}",45.134615000000004
+52,Suspended particulate (TSP),[ 40.192793 -76.728549],"{'Commercial and Services': 0.24, 'Residential': 0.43, 'Streams and canals': 0.18, 'Mixed urban or built-up land': 0.15}",57.333332999999996
+53,Suspended particulate (TSP),[ 40.230571 -76.832163],"{'Residential': 0.68, 'Streams and canals': 0.03, 'Industrial': 0.29}",69.098361
+54,Suspended particulate (TSP),[ 40.263056 -76.877222],"{'Commercial and Services': 0.71, 'Residential': 0.14, 'Transportation, communications and services': 0.15}",46.483333
+55,Suspended particulate (TSP),[ 39.835556 -75.3725  ],"{'Residential': 0.08, 'Streams and canals': 0.5, 'Industrial': 0.28, 'Transitional areas': 0.14}",72.666667
+56,Suspended particulate (TSP),[ 39.919736 -75.383785],"{'Commercial and Services': 0.25925925925925924, 'Residential': 0.7407407407407407}",86.153153
+57,Suspended particulate (TSP),[ 39.890014 -75.281282],"{'Commercial and Services': 0.11, 'Residential': 0.51, 'Industrial and commercial complexes': 0.37, 'Nonforested wetland': 0.01}",58.0
+58,Suspended particulate (TSP),[ 41.963618 -80.40394 ],"{'Mixed urban or built-up land': 0.15254237288135594, 'Cropland and pasture': 0.847457627118644}",91.147541
+59,Suspended particulate (TSP),[ 42.119727 -79.985037],"{'Cropland and pasture': 0.09, 'Deciduous forest land': 0.48, 'Other urban or built-up land': 0.07, 'Transitional areas': 0.36}",52.311475
+60,Suspended particulate (TSP),[ 42.091672 -80.178932],"{'Residential': 0.02, 'Other urban or built-up land': 0.04, 'Transportation, communications and services': 0.94}",55.896552
+61,Suspended particulate (TSP),[ 42.120561 -80.080318],"{'Commercial and Services': 0.15254237288135594, 'Residential': 0.7033898305084746, 'Other urban or built-up land': 0.1440677966101695}",57.409836
+62,Suspended particulate (TSP),[ 42.145283 -80.040872],"{'Residential': 0.46, 'Industrial': 0.34, 'Transportation, communications and services': 0.2}",86.01304350000001
+63,Suspended particulate (TSP),[ 40.020581 -79.890874],"{'Commercial and Services': 0.25, 'Residential': 0.52, 'Streams and canals': 0.16, 'Evergreen forest land': 0.06, 'Mixed forest land': 0.01}",110.46551699999999
+64,Suspended particulate (TSP),[ 39.92891  -77.652191],"{'Commercial and Services': 0.2706766917293233, 'Residential': 0.6992481203007519, 'Other urban or built-up land': 0.03007518796992481}",62.694915
+65,Suspended particulate (TSP),[ 41.371667 -75.742122],"{'Commercial and Services': 0.3150684931506849, 'Residential': 0.684931506849315}",70.24137900000001
+66,Suspended particulate (TSP),[ 41.485276 -75.57906 ],"{'Residential': 0.76, 'Other urban or built-up land': 0.24}",88.311828
+67,Suspended particulate (TSP),[ 41.411667 -75.655833],"{'Commercial and Services': 0.79, 'Residential': 0.21}",52.265306
+68,Suspended particulate (TSP),[ 41.445555 -75.62045 ],"{'Residential': 0.91, 'Industrial': 0.09}",78.45
+69,Suspended particulate (TSP),[ 40.039444 -76.306389],"{'Commercial and Services': 0.83, 'Residential': 0.17}",58.1
+70,Suspended particulate (TSP),[ 40.055833 -76.306944],"{'Commercial and Services': 0.5841584158415841, 'Residential': 0.07920792079207921, 'Industrial and commercial complexes': 0.10891089108910891, 'Other urban or built-up land': 0.04950495049504951, 'Industrial': 0.1782178217821782}",107.28571399999998
+71,Suspended particulate (TSP),[ 40.0725   -76.335556],"{'Industrial and commercial complexes': 0.75, 'Cropland and pasture': 0.02, 'Industrial': 0.23}",87.533898
+72,Suspended particulate (TSP),[ 40.068904 -76.292703],"{'Residential': 0.51, 'Cropland and pasture': 0.29, 'Transportation, communications and services': 0.2}",77.311475
+73,Suspended particulate (TSP),[ 40.050849 -76.393817],"{'Cropland and pasture': 0.625, 'Industrial and commercial complexes': 0.3, 'Other urban or built-up land': 0.05, 'Transportation, communications and services': 0.025}",87.144144
+74,Suspended particulate (TSP),[ 40.995848 -80.346442],"{'Commercial and Services': 0.29, 'Residential': 0.07, 'Industrial': 0.64}",91.304348
+75,Suspended particulate (TSP),[ 40.858073 -80.288384],"{'Commercial and Services': 0.49, 'Residential': 0.38, 'Industrial': 0.13}",72.254237
+76,Suspended particulate (TSP),[ 40.97696  -80.493113],"{'Residential': 0.5, 'Industrial': 0.04, 'Reservoirs': 0.25, 'Evergreen forest land': 0.17, 'Strip mines, quarries and gravel pits': 0.04}",76.978261
+77,Suspended particulate (TSP),[ 40.33668  -76.403538],"{'Commercial and Services': 0.06, 'Residential': 0.9, 'Cropland and pasture': 0.04}",81.967213
+78,Suspended particulate (TSP),[ 40.618617 -75.448505],"{'Commercial and Services': 0.14, 'Residential': 0.41, 'Other urban or built-up land': 0.45}",60.214286
+79,Suspended particulate (TSP),[ 40.53584  -75.506286],"{'Commercial and Services': 0.22, 'Residential': 0.34, 'Cropland and pasture': 0.44}",37.821428999999995
+80,Suspended particulate (TSP),[ 40.954172 -75.967131],"{'Commercial and Services': 0.33, 'Residential': 0.45, 'Other urban or built-up land': 0.04, 'Reservoirs': 0.06, 'Strip mines, quarries and gravel pits': 0.12}",76.5
+81,Suspended particulate (TSP),[ 41.321944 -75.789167],"{'Commercial and Services': 0.46, 'Residential': 0.5, 'Other urban or built-up land': 0.02, 'Mixed urban or built-up land': 0.02}",72.35
+82,Suspended particulate (TSP),[ 41.202224 -75.990742],"{'Commercial and Services': 0.23, 'Residential': 0.61, 'Other urban or built-up land': 0.09, 'Strip mines, quarries and gravel pits': 0.07}",83.852459
+83,Suspended particulate (TSP),[ 41.294723 -75.869626],"{'Commercial and Services': 0.24, 'Residential': 0.74, 'Cropland and pasture': 0.02}",53.098361
+84,Suspended particulate (TSP),[ 41.248056 -75.880278],"{'Commercial and Services': 0.88, 'Residential': 0.01, 'Streams and canals': 0.06, 'Industrial': 0.01, 'Transportation, communications and services': 0.04}",65.0
+85,Suspended particulate (TSP),[ 41.222584 -76.504949],"{'Deciduous forest land': 0.42574257425742573, 'Cropland and pasture': 0.5742574257425742}",60.169492000000005
+86,Suspended particulate (TSP),[ 41.221669 -76.015464],"{'Residential': 0.2, 'Streams and canals': 0.32, 'Industrial': 0.07, 'Deciduous forest land': 0.05, 'Mixed urban or built-up land': 0.36}",58.26087
+87,Suspended particulate (TSP),[ 41.246394 -76.989941],"{'Commercial and Services': 0.37, 'Residential': 0.1, 'Streams and canals': 0.26, 'Industrial': 0.27}",87.122807
+88,Suspended particulate (TSP),[ 41.24     -77.015278],"{'Commercial and Services': 0.11, 'Residential': 0.6, 'Streams and canals': 0.04, 'Industrial': 0.25}",44.610169
+89,Suspended particulate (TSP),[ 41.212236 -80.502001],"{'Commercial and Services': 0.033816425120772944, 'Residential': 0.391304347826087, 'Cropland and pasture': 0.4830917874396135, 'Transportation, communications and services': 0.09178743961352658}",86.534483
+90,Suspended particulate (TSP),[ 41.232235 -80.506168],"{'Commercial and Services': 0.395, 'Residential': 0.105, 'Cropland and pasture': 0.5}",43.454545
+91,Suspended particulate (TSP),[ 40.245566 -75.290446],"{'Commercial and Services': 0.35, 'Residential': 0.65}",80.925926
+92,Suspended particulate (TSP),[ 40.1389   -75.056551],"{'Commercial and Services': 0.3, 'Residential': 0.09, 'Other urban or built-up land': 0.26, 'Cropland and pasture': 0.35}",55.070175
+93,Suspended particulate (TSP),[ 40.076944 -75.304167],"{'Commercial and Services': 0.31, 'Residential': 0.69}",65.10169499999999
+94,Suspended particulate (TSP),[ 40.120845 -75.303782],"{'Residential': 0.87, 'Cropland and pasture': 0.13}",88.805861
+95,Suspended particulate (TSP),[ 40.252511 -75.629624],"{'Commercial and Services': 0.047872340425531915, 'Residential': 0.5319148936170213, 'Other urban or built-up land': 0.42021276595744683}",82.516667
+96,Suspended particulate (TSP),[ 40.740283 -75.310722],"{'Commercial and Services': 0.16666666666666666, 'Residential': 0.4, 'Cropland and pasture': 0.4166666666666667, 'Strip mines, quarries and gravel pits': 0.016666666666666666}",74.016949
+97,Suspended particulate (TSP),[ 40.620278 -75.363333],"{'Residential': 0.27, 'Industrial': 0.14, 'Other urban or built-up land': 0.59}",62.508196999999996
+98,Suspended particulate (TSP),[ 40.688889 -75.215556],"{'Commercial and Services': 0.14018691588785046, 'Residential': 0.6355140186915887, 'Streams and canals': 0.07476635514018691, 'Transportation, communications and services': 0.14953271028037382}",104.73214300000001
+99,Suspended particulate (TSP),[ 40.6175   -75.333056],"{'Residential': 0.009174311926605505, 'Industrial': 0.8532110091743119, 'Cropland and pasture': 0.05504587155963303, 'Transportation, communications and services': 0.08256880733944955}",83.934426
+100,Suspended particulate (TSP),[ 40.69 -75.5 ],"{'Commercial and Services': 0.02, 'Residential': 0.55, 'Streams and canals': 0.07, 'Industrial': 0.35, 'Cropland and pasture': 0.01}",75.606557
+101,Suspended particulate (TSP),[ 40.456944 -77.165556],"{'Cropland and pasture': 0.49, 'Deciduous forest land': 0.51}",80.516667
+102,Suspended particulate (TSP),[ 39.94418  -75.165722],"{'Commercial and Services': 0.009900990099009901, 'Residential': 0.5841584158415841, 'Mixed urban or built-up land': 0.40594059405940597}",70.5
+103,Suspended particulate (TSP),[ 39.978333 -75.097222],"{'Streams and canals': 0.42, 'Industrial': 0.21, 'Transportation, communications and services': 0.37}",103.04918
+104,Suspended particulate (TSP),[ 39.978611 -75.118056],"{'Commercial and Services': 0.23, 'Residential': 0.48, 'Transportation, communications and services': 0.29}",85.150943
+105,Suspended particulate (TSP),[ 39.989167 -75.106667],"{'Residential': 0.94, 'Mixed urban or built-up land': 0.06}",58.661017
+106,Suspended particulate (TSP),[ 39.979722 -75.110278],"{'Residential': 0.29, 'Transportation, communications and services': 0.71}",79.272727
+107,Suspended particulate (TSP),[ 39.895113 -75.245738],"{'Commercial and Services': 0.06, 'Residential': 0.72, 'Nonforested wetland': 0.09, 'Transitional areas': 0.13}",101.44642900000001
+108,Suspended particulate (TSP),[ 39.920946 -75.166845],"{'Commercial and Services': 0.08771929824561403, 'Residential': 0.8771929824561403, 'Other urban or built-up land': 0.03508771929824561}",61.629630000000006
+109,Suspended particulate (TSP),[ 39.932891 -75.226293],"{'Commercial and Services': 0.12727272727272726, 'Residential': 0.5272727272727272, 'Industrial': 0.08181818181818182, 'Transportation, communications and services': 0.15454545454545454, 'Industrial and commercial complexes': 0.10909090909090909}",73.627119
+110,Suspended particulate (TSP),[ 39.980113 -75.155733],"{'Mixed urban or built-up land': 0.93, 'Residential': 0.07}",47.814815
+111,Suspended particulate (TSP),[ 39.999722 -75.075   ],"{'Residential': 0.7014925373134329, 'Industrial': 0.07462686567164178, 'Other urban or built-up land': 0.22388059701492538}",83.333333
+112,Suspended particulate (TSP),[ 40.008889 -75.09778 ],"{'Commercial and Services': 0.65, 'Residential': 0.35}",95.08510600000001
+113,Suspended particulate (TSP),[ 40.049616 -75.240822],"{'Commercial and Services': 0.01, 'Residential': 0.51, 'Deciduous forest land': 0.2, 'Cropland and pasture': 0.28}",71.666667
+114,Suspended particulate (TSP),[ 40.002335 -75.219903],"{'Commercial and Services': 0.43859649122807015, 'Residential': 0.03508771929824561, 'Industrial': 0.3157894736842105, 'Reservoirs': 0.21052631578947367}",88.724138
+115,Suspended particulate (TSP),[ 40.0764   -75.011549],"{'Industrial and commercial complexes': 0.09, 'Transportation, communications and services': 0.91}",80.229508
+116,Suspended particulate (TSP),[ 40.036223 -75.139342],"{'Commercial and Services': 0.58, 'Residential': 0.42}",70.032787
+117,Suspended particulate (TSP),[ 40.02789  -75.047395],"{'Commercial and Services': 0.049019607843137254, 'Residential': 0.9117647058823529, 'Other urban or built-up land': 0.0392156862745098}",76.07142900000001
+118,Suspended particulate (TSP),[ 40.237871 -76.197171],{'Cropland and pasture': 1.0},61.444444
+119,Suspended particulate (TSP),[ 40.146667 -79.902222],"{'Residential': 0.21, 'Streams and canals': 0.23, 'Industrial': 0.38, 'Deciduous forest land': 0.01, 'Transportation, communications and services': 0.17}",69.408163
+120,Suspended particulate (TSP),[ 40.165023 -79.862262],"{'Residential': 0.17, 'Streams and canals': 0.28, 'Industrial': 0.38, 'Deciduous forest land': 0.06, 'Transitional areas': 0.11}",35.607143
+121,Suspended particulate (TSP),[ 40.255855 -79.930875],"{'Residential': 0.28, 'Deciduous forest land': 0.72}",56.0
+122,Suspended particulate (TSP),[ 40.171968 -80.252275],"{'Commercial and Services': 0.38, 'Residential': 0.45, 'Industrial': 0.14, 'Evergreen forest land': 0.03}",64.090909
+123,Suspended particulate (TSP),[ 40.551686 -79.759757],"{'Commercial and Services': 0.2, 'Residential': 0.15, 'Streams and canals': 0.12, 'Industrial': 0.33, 'Deciduous forest land': 0.2}",74.894737
+124,Suspended particulate (TSP),[ 40.161134 -79.880318],"{'Commercial and Services': 0.18, 'Residential': 0.53, 'Streams and canals': 0.04, 'Industrial': 0.25}",64.773585
+125,Suspended particulate (TSP),[ 39.965278 -76.699444],"{'Commercial and Services': 0.01, 'Residential': 0.57, 'Industrial': 0.42}",68.62963
+126,Suspended particulate (TSP),[ 39.963333 -76.7225  ],{'Commercial and Services': 1.0},49.571428999999995
+127,Suspended particulate (TSP),[ 39.951129 -76.765774],"{'Commercial and Services': 0.04, 'Residential': 0.7, 'Industrial': 0.24, 'Cropland and pasture': 0.02}",46.8809525
+128,Suspended particulate (TSP),[ 39.980018 -76.67077 ],"{'Commercial and Services': 0.82, 'Cropland and pasture': 0.04, 'Industrial': 0.06, 'Other urban or built-up land': 0.08}",39.307691999999996
+129,Suspended particulate (TSP),[ 39.930018 -76.68466 ],"{'Commercial and Services': 0.22, 'Residential': 0.11, 'Cropland and pasture': 0.6, 'Transportation, communications and services': 0.07}",66.839286
+130,Suspended particulate (TSP),[ 40.028073 -76.750495],"{'Mixed urban or built-up land': 0.056074766355140186, 'Cropland and pasture': 0.9345794392523364, 'Residential': 0.009345794392523364}",66.645161

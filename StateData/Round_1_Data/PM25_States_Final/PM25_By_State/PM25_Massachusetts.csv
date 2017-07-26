@@ -1,0 +1,23 @@
+,Parameter Name,Site_keys,LU,ppm
+0,PM2.5 - Local Conditions,[ 42.452017 -73.255089],"{'Commercial and Services': 0.83, 'Residential': 0.17}",0.0053849815
+1,PM2.5 - Local Conditions,[ 42.448009 -73.254108],"{'Commercial and Services': 0.63, 'Residential': 0.37}",0.005602420666666667
+2,PM2.5 - Local Conditions,[ 41.685707 -71.169235],"{'Mixed urban or built-up land': 0.23, 'Industrial': 0.01, 'Lakes': 0.12, 'Residential': 0.64}",0.006387801
+3,PM2.5 - Local Conditions,[ 42.474642 -70.970816],"{'Residential': 0.91, 'Other urban or built-up land': 0.08, 'Reservoirs': 0.01}",0.005536488
+4,PM2.5 - Local Conditions,[ 42.770837 -71.10229 ],"{'Commercial and Services': 0.06451612903225806, 'Residential': 0.782258064516129, 'Other urban or built-up land': 0.12903225806451613, 'Deciduous forest land': 0.016129032258064516, 'Streams and canals': 0.008064516129032258}",0.010354545
+5,PM2.5 - Local Conditions,[ 42.698215 -71.164413],"{'Commercial and Services': 0.075, 'Residential': 0.2, 'Streams and canals': 0.155, 'Industrial': 0.07, 'Transportation, communications and services': 0.5}",0.0054389830000000005
+6,PM2.5 - Local Conditions,[ 42.605816 -72.596689],"{'Commercial and Services': 0.16666666666666666, 'Residential': 0.8083333333333333, 'Deciduous forest land': 0.025}",0.0058578350000000005
+7,PM2.5 - Local Conditions,[ 42.19438  -72.555112],"{'Commercial and Services': 0.87, 'Residential': 0.13}",0.0050360000000000005
+8,PM2.5 - Local Conditions,[ 42.108992 -72.590803],"{'Commercial and Services': 0.94, 'Industrial': 0.06}",0.006669283500000001
+9,PM2.5 - Local Conditions,[ 42.298493 -72.334079],"{'Commercial and Services': 0.2, 'Deciduous forest land': 0.792, 'Evergreen forest land': 0.008}",0.006111184
+10,PM2.5 - Local Conditions,[ 42.211774 -71.11397 ],"{'Commercial and Services': 0.095, 'Deciduous forest land': 0.285, 'Cropland and pasture': 0.12, 'Transportation, communications and services': 0.5}",0.0062155959999999994
+11,PM2.5 - Local Conditions,[ 42.065106 -71.012129],"{'Commercial and Services': 0.5392156862745098, 'Residential': 0.46078431372549017}",0.007160182
+12,PM2.5 - Local Conditions,[ 42.348873 -71.097163],"{'Commercial and Services': 0.21465968586387435, 'Residential': 0.13089005235602094, 'Streams and canals': 0.13089005235602094, 'Transportation, communications and services': 0.5235602094240838}",0.0059610620000000005
+13,PM2.5 - Local Conditions,[ 42.3295 -71.0826],"{'Commercial and Services': 0.2, 'Residential': 0.225, 'Other urban or built-up land': 0.075, 'Transportation, communications and services': 0.5}",0.006733333
+14,PM2.5 - Local Conditions,[ 42.3631 -71.0543],"{'Commercial and Services': 0.2857142857142857, 'Transportation, communications and services': 0.7142857142857143}",0.004973819500000001
+15,PM2.5 - Local Conditions,[ 42.325186 -71.056061],"{'Commercial and Services': 0.189873417721519, 'Residential': 0.37341772151898733, 'Industrial': 0.006329113924050633, 'Transportation, communications and services': 0.43037974683544306}",0.0053763465
+16,PM2.5 - Local Conditions,[ 42.260102 -71.798375],"{'Commercial and Services': 0.32432432432432434, 'Residential': 0.0472972972972973, 'Industrial': 0.05405405405405406, 'Other urban or built-up land': 0.10810810810810811, 'Transportation, communications and services': 0.46621621621621623}",0.005242478
+17,PM2.5 - Local Conditions,[ 42.263955 -71.794322],"{'Commercial and Services': 0.43089430894308944, 'Residential': 0.06504065040650407, 'Industrial': 0.024390243902439025, 'Transportation, communications and services': 0.4796747967479675}",0.0051249595
+0,PM2.5 - combined,[ 41.975804 -70.023598],"{'Mixed forest land': 0.85, 'Evergreen forest land': 0.15}",0.007255728
+1,PM2.5 - combined,[ 41.330469 -70.785225],"{'Shrub-brushland rangeland': 0.4377880184331797, 'Bays and estuaries': 0.5391705069124424, 'Lakes': 0.02304147465437788}",0.00648362
+2,PM2.5 - combined,[ 42.19438  -72.555112],"{'Commercial and Services': 0.87, 'Residential': 0.13}",0.013340548
+3,PM2.5 - combined,[ 42.3295 -71.0826],"{'Commercial and Services': 0.2, 'Residential': 0.225, 'Other urban or built-up land': 0.075, 'Transportation, communications and services': 0.5}",0.03801443

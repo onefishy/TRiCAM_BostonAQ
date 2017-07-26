@@ -1,0 +1,11 @@
+,Parameter Name,Site_keys,LU,ppm
+0,Nitrogen dioxide (NO2),[ 42.474642 -70.970816],"{'Residential': 0.91, 'Other urban or built-up land': 0.08, 'Reservoirs': 0.01}",0.01109211
+1,Nitrogen dioxide (NO2),[ 42.814412 -70.817783],"{'Commercial and Services': 0.1, 'Residential': 0.24, 'Bays and estuaries': 0.66}",0.006317062
+2,Nitrogen dioxide (NO2),[ 42.19438  -72.555112],"{'Commercial and Services': 0.87, 'Residential': 0.13}",0.0037895800000000003
+3,Nitrogen dioxide (NO2),[ 42.108992 -72.590803],"{'Commercial and Services': 0.94, 'Industrial': 0.06}",0.012205121999999999
+4,Nitrogen dioxide (NO2),[ 42.298493 -72.334079],"{'Commercial and Services': 0.2, 'Deciduous forest land': 0.792, 'Evergreen forest land': 0.008}",0.002809367
+5,Nitrogen dioxide (NO2),[ 42.211774 -71.11397 ],"{'Commercial and Services': 0.095, 'Deciduous forest land': 0.285, 'Cropland and pasture': 0.12, 'Transportation, communications and services': 0.5}",0.014850751999999998
+6,Nitrogen dioxide (NO2),[ 42.348873 -71.097163],"{'Commercial and Services': 0.21465968586387435, 'Residential': 0.13089005235602094, 'Streams and canals': 0.13089005235602094, 'Transportation, communications and services': 0.5235602094240838}",0.013198638
+7,Nitrogen dioxide (NO2),[ 42.3295 -71.0826],"{'Commercial and Services': 0.2, 'Residential': 0.225, 'Other urban or built-up land': 0.075, 'Transportation, communications and services': 0.5}",0.015035096
+8,Nitrogen dioxide (NO2),[ 42.325186 -71.056061],"{'Commercial and Services': 0.189873417721519, 'Residential': 0.37341772151898733, 'Industrial': 0.006329113924050633, 'Transportation, communications and services': 0.43037974683544306}",0.005197322
+9,Nitrogen dioxide (NO2),[ 42.263955 -71.794322],"{'Commercial and Services': 0.43089430894308944, 'Residential': 0.06504065040650407, 'Industrial': 0.024390243902439025, 'Transportation, communications and services': 0.4796747967479675}",0.0027212440000000003

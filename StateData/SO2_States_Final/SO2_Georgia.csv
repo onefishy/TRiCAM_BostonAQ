@@ -1,0 +1,14 @@
+,Parameter Name,Site_keys,LU,ppm
+0,Sulfur dioxide,[ 33.153413 -83.23569 ],"{'Residential': 0.11731843575418995, 'Reservoirs': 0.13966480446927373, 'Transportation, communications and services': 0.18435754189944134, 'Evergreen forest land': 0.5586592178770949}",0.005818708
+1,Sulfur dioxide,[ 32.915415 -83.704624],"{'Evergreen forest land': 0.36752136752136755, 'Transportation, communications and services': 0.48717948717948717, 'Mixed forest land': 0.1452991452991453}",0.005935263
+2,Sulfur dioxide,[ 32.054375 -81.123167],"{'Commercial and Services': 0.05, 'Residential': 0.46, 'Industrial and commercial complexes': 0.49}",0.006005144333333334
+3,Sulfur dioxide,[ 32.149647 -81.181502],"{'Forested wetland': 0.11, 'Reservoirs': 0.12, 'Evergreen forest land': 0.04, 'Mixed forest land': 0.44, 'Commercial and Services': 0.2, 'Transitional areas': 0.09}",0.004921401000000001
+4,Sulfur dioxide,[ 33.388172 -84.81688 ],"{'Industrial': 0.07, 'Evergreen forest land': 0.2, 'Mixed forest land': 0.05, 'Commercial and Services': 0.02, 'Residential': 0.62, 'Transitional areas': 0.04}",0.009921226
+5,Sulfur dioxide,[ 34.98567  -84.375193],"{'Commercial and Services': 0.03, 'Residential': 0.46, 'Deciduous forest land': 0.51}",0.009121145
+6,Sulfur dioxide,[ 34.26054 -85.32333],"{'Residential': 0.18095238095238095, 'Mixed forest land': 0.1523809523809524, 'Evergreen forest land': 0.6190476190476191, 'Strip mines, quarries and gravel pits': 0.047619047619047616}",0.005936785
+7,Sulfur dioxide,[ 33.752625 -84.383325],"{'Commercial and Services': 0.48, 'Transportation, communications and services': 0.52}",0.006134822
+8,Sulfur dioxide,[ 31.150787 -81.477044],"{'Residential': 0.31, 'Streams and canals': 0.04, 'Other urban or built-up land': 0.11, 'Lakes': 0.18, 'Nonforested wetland': 0.36}",0.008916621000000001
+9,Sulfur dioxide,[ 31.437677 -84.121295],"{'Orchards, groves, vineyards, nurseries..': 1.0}",0.0064408519999999995
+10,Sulfur dioxide,[ 32.49653  -84.868541],"{'Commercial and Services': 0.21, 'Residential': 0.26, 'Transitional areas': 0.35, 'Mixed forest land': 0.18}",0.010936268
+11,Sulfur dioxide,[ 33.39375  -82.006228],"{'Commercial and Services': 0.49, 'Residential': 0.21, 'Industrial': 0.3}",0.008695027
+12,Sulfur dioxide,[ 32.091565 -82.888754],"{'Other urban or built-up land': 0.5, 'Forested wetland': 0.01, 'Reservoirs': 0.01, 'Transportation, communications and services': 0.01, 'Evergreen forest land': 0.47}",0.015726483

@@ -1,0 +1,4 @@
+,Parameter Name,Site_keys,LU,ppm
+0,Sulfur dioxide,[ 41.832322 -71.416445],"{'Commercial and Services': 0.3382352941176471, 'Residential': 0.14705882352941177, 'Industrial': 0.11764705882352941, 'Transportation, communications and services': 0.39705882352941174}",0.015483895000000001
+1,Sulfur dioxide,[ 41.825556 -71.405278],"{'Commercial and Services': 0.93, 'Residential': 0.05, 'Transportation, communications and services': 0.02}",0.013782157000000001
+2,Sulfur dioxide,[ 41.820933 -71.407557],"{'Commercial and Services': 0.72, 'Streams and canals': 0.04, 'Industrial': 0.12, 'Transportation, communications and services': 0.12}",0.013829320999999999

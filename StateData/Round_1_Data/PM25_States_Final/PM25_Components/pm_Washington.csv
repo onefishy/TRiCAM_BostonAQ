@@ -1,0 +1,13 @@
+,Parameter Name,Site_keys,LU,ppm
+0,PM2.5 - combined,[  48.006295 -122.973953],{'Evergreen forest land': 1.0},0.007783669
+1,PM2.5 - combined,[  48.29786 -124.62491],{'Evergreen forest land': 1.0},0.016990486
+2,PM2.5 - combined,[  47.597222 -122.319722],"{'Commercial and Services': 0.3918918918918919, 'Residential': 0.12162162162162163, 'Transportation, communications and services': 0.4864864864864865}",0.001612848
+3,PM2.5 - combined,[  47.568236 -122.308628],"{'Commercial and Services': 0.051194539249146756, 'Residential': 0.3412969283276451, 'Other urban or built-up land': 0.21843003412969283, 'Reservoirs': 0.04778156996587031, 'Transportation, communications and services': 0.3412969283276451}",0.003907459
+4,PM2.5 - combined,[  47.399815 -121.427096],{'Evergreen forest land': 1.0},0.02241811
+5,PM2.5 - combined,[  45.666204 -121.000708],{'Herbaceous Rangeland': 1.0},0.002949782
+6,PM2.5 - combined,[  46.624184 -121.388064],{'Evergreen forest land': 1.0},0.02595312
+7,PM2.5 - combined,[  48.387531 -119.928671],{'Evergreen forest land': 1.0},0.026211432
+8,PM2.5 - combined,[  47.1864 -122.4517],"{'Commercial and Services': 0.08181818181818182, 'Residential': 0.9090909090909091, 'Mixed urban or built-up land': 0.00909090909090909}",0.003075706
+9,PM2.5 - combined,[  46.75838 -122.12429],"{'Mixed forest land': 0.83, 'Evergreen forest land': 0.17}",0.00284969
+10,PM2.5 - combined,[  48.73142  -121.065815],{'Evergreen forest land': 1.0},0.00223291
+11,PM2.5 - combined,[  46.598056 -120.499167],"{'Commercial and Services': 0.3, 'Residential': 0.66, 'Mixed urban or built-up land': 0.04}",0.002194266
