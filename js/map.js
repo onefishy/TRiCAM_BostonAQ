@@ -61,6 +61,23 @@ $('li.program').click(function() {
    $('li.program').not(this).find('ul');
    $(this).find('ul').toggle();
 });
+$('#myDropdown .drop').on({
+	"click":function(e){
+      e.stopPropagation();
+    }
+});
+
+
+//attempt at highlighted onclick
+function dropclick() {
+    if (d3.select(this).style("background-color" == "f9f9f9")) {
+        d3.select(this).style("fill", "red");
+    }
+    else {
+        d3.select(this).style("background-color", "f9f9f9");
+    }
+        }
+
 		
 
 // Close the dropdown menu if the user clicks outside of it
