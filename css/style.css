@@ -1,0 +1,188 @@
+.body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+
+#map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  float: right;
+  left: 0;
+  bottom: 50px; /* Set this to the height of the footer */
+  right: 300px; /* Set this to the width of the nav bar */
+  background-color: #e1e1e1;
+  z-index: 0;
+
+}
+
+#graph_window {
+  float: none;
+  position: absolute;
+  opacity: .9;
+  width: 20%;
+  height: 20%;
+  margin-right: 1%
+  margin-left: 1%;
+  margin-top: 1%;
+  bottom: 0;
+  left: 0;
+  background: #656565;
+  z-index: 4;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: .8vw;
+  color: white;
+  display: block;
+  padding-top: 10px;
+}
+
+.axis { font: 10px sans-serif; }
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+    font: 10px sans-serif;
+}
+
+#side_bar { 
+  position: absolute;
+  opacity: .9;
+  width: 20%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #c7c7c7; 
+  z-index: 2;
+
+
+}
+
+#footer {
+  opacity: .4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px; 
+  overflow: hidden; /* Disables scrollbars on the header frame. To enable scrollbars, change "hidden" to "scroll" */
+  background: #c7c7c7;
+  z-index: 1;
+}
+
+#info {
+  top: 10px;
+  position: relative; 
+  z-index: 2;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2%;
+  max-width: 50%;
+  width: auto\9;
+  height: auto;
+}
+
+
+
+/*general button settings*/
+button {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  display: block;
+  border-radius: 10px;
+  background-color: #656565;
+  color: white;
+  width: 60%;
+  font-size: 16px;
+  left: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 12px;
+  font-size: .8vw;
+  font-weight: bold;
+  display: block;
+}
+
+button:hover {
+  background-color: #add8e6
+}
+
+
+/* chart styling */
+.axis {font: 5px sans-serif;}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1px;
+  }
+
+
+
+/*centers text in unordered lists aka centers text in our advanced view*/
+ul {
+  list-style: none;
+  padding-left:0;
+  font-weight: normal;
+  }
+
+/*controls header elements in advanced view like Air Pollutants*/
+.program {
+    font-weight: bold;
+    list-style: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    margin: auto;
+    width: 50%;
+    display: none;
+    text-align: center;
+    position: relative;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-size: .8vw;
+    min-width: 20%;
+    color: #add8e6;
+    padding: 5%;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* this refines the hover on the advanced view list*/
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+
+.show {display:block;}
+
+
+
+
