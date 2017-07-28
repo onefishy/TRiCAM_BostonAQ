@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+	<head>
+		<title> AQ Visualization </title>
+		<link rel="stylesheet" href="css/leaflet.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
+		   integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
+		   crossorigin=""></script>
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/leaflet.heat.js"></script>
+		<script src="data/data_test.geojson"></script>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<meta charset="utf-8">
+	</head>
+	<body>	
+		<div id = "graph_window"> Air Quality Metrics 
+		</div>	
+		<div id = "side_bar">				
+			<img src="img/AQ_blue.png" alt="logo" id="logo">
+			<div id = "info">
+				<button onclick="myTour()" class="dropbtn">Take A Tour</button>
+				<div class="dropdown">
+					<button onclick="myFunction()" id = "adview" class="dropbtn">Advanced View</button>
+				    <div id="myDropdown" class="dropdown-content">
+				    	<ul>
+			    			<li class="program"><a href="#">Air Pollutants</a>
+						  		<ul>
+								    <li class= "drop" id="d1" onclick = "dropclick('d1')"><a href ="#">Sulfur Dioxide</a></li>
+								    <li class= "drop" id="d2"><a href ="#" onclick = "dropclick('d2')">Nitrogen Dioxide</a></li>
+								    <li class= "drop" id="d3" onclick = "dropclick('d3')"> <a href ="#">Particulate Matter 2.5</a></li>
+						  </ul></li>
+						</ul>
+						<ul> 
+							<li class="program"><a href="#">Health Concerns</a>
+						  		<ul>
+								    <li  class= "drop" id="d4" onclick = "dropclick('d4')"><a href ="#">Respiratory</a></li>
+								    <li class= "drop" id="d5" onclick = "dropclick('d5')"><a href ="#">Cardiovascular</a></li>
+								    <li class= "drop" id="d6" onclick = "dropclick('d6')"><a href ="#">General</a></li>
+						  </ul></li>
+						</ul>
+						<ul>
+							<li class="program"><a href="#">Layers</a>
+						  		<ul>
+								    <li class= "drop" id="d7" onclick = "dropclick('d7')"><a href ="#">Transit</a></li>
+								    <li class= "drop" id="d8" onclick = "dropclick('d8')"><a href ="#">Cities</a></li>
+								    <li class= "drop" id="d9" onclick = "dropclick('d9')"><a href ="#">Weather</a></li>
+						  </ul></li>
+						</ul>
+					    <li class = "program" id="d10" onclick = "dropclick('d10')"> <a href="#">Time Bar</a></li>
+				    </div>
+				</div>
+			</div>	
+		</div>
+		<div id = "map_area">
+			<div id = "map"></div>
+		   <div id='loading'></div>
+		</div>
+		<div id = "footer"> footer </div>
+		<script src="js/map.js"></script>
+		<script src="js/graph.js"></script>		
+	</body>
+</html>
