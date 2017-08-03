@@ -35,7 +35,7 @@ map.addLayer( L.gridLayer.debugCoords() );
 
 //add heat layer
 var heat;
-$.getJSON("./data/data_test.geojson",function(data){
+$.getJSON("./data/rodents.geojson",function(data){
       //var locations is an array of coordinates
     var locations = data.features.map(function(rat) {
         // the heatmap plugin wants an array of each location
