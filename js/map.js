@@ -51,6 +51,7 @@ $.getJSON("./data/rodents.geojson",function(data){
 var neigh;
 var cam;
 var newton;
+var transit;
 
 $.getJSON("./data/cambridge.geojson",function(hoodData){
   cam = L.geoJson(hoodData, {
@@ -74,6 +75,19 @@ $.getJSON("./data/newton.geojson",function(hoodData){
     //adds popup of neighborhood name
     onEachFeature: function( feature, layer ){
       layer.bindPopup("<strong>" + "Ward " + feature.properties.Ward + "</strong><br/>"+ "Precinct " + feature.properties.Precinct)
+    }
+  }  );
+});
+
+$.getJSON("./data/subwaylines.json",function(hoodData){
+  transit = L.geoJson(hoodData, {
+  //specifies styling for neighborhoods
+    style: function(feature){
+    return { color: feature.properties.LINE, weight: 3, opacity: 0.8 };
+    },
+    //adds popup of neighborhood name
+    onEachFeature: function( feature, layer ){
+      layer.bindPopup("<strong>" + "Ward " + feature.id)
     }
   }  );
 });
@@ -151,6 +165,7 @@ function clickneigh(id){
         map.removeLayer(neigh);
         map.removeLayer(cam);
         map.removeLayer(newton);
+	map.removeLayer(transit);
     }
     else{
         tag.style.backgroundColor = "papayawhip";
@@ -158,6 +173,7 @@ function clickneigh(id){
         neigh.addTo(map);
         cam.addTo(map)
         newton.addTo(map);
+	transit.addTo(map);
     }
 
 }
