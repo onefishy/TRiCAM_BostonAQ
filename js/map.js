@@ -165,7 +165,6 @@ function clickneigh(id){
         map.removeLayer(neigh);
         map.removeLayer(cam);
         map.removeLayer(newton);
-	map.removeLayer(transit);
     }
     else{
         tag.style.backgroundColor = "papayawhip";
@@ -173,10 +172,26 @@ function clickneigh(id){
         neigh.addTo(map);
         cam.addTo(map)
         newton.addTo(map);
-	transit.addTo(map);
     }
 
 }
+
+//controls highlighted onclick
+function transitmap(id){
+  var tag = document.getElementById(id);
+  //if not already clicked, highlight button and add layer
+    if (tag.style.backgroundColor=="papayawhip"){
+        tag.style.backgroundColor = "#f9f9f9"; 
+        map.removeLayer(transit);//getheat();
+    }
+    else{
+        tag.style.backgroundColor = "papayawhip";
+        transit.addTo(map);//getheat();
+    }
+
+}
+
+
 
 
 
