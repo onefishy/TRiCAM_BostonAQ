@@ -1,5 +1,0 @@
-\beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{Review: Statistical Regression Models}{3}{0}{1}
-\beamer@sectionintoc {2}{Review: Evaluating Models}{9}{0}{2}
-\beamer@sectionintoc {3}{Regularization and Bayesian Models}{14}{0}{3}
-\beamer@sectionintoc {4}{Application: Land Use Regression}{34}{0}{4}
