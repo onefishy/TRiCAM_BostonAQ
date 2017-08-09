@@ -1,5 +1,0 @@
-\frametitle{Filtering}
-Filtering works very much like with \texttt{numpy} arrays!
-\begin{center}
-\includegraphics[width=90mm]{filtering}
-\end{center}
