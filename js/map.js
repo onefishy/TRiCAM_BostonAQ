@@ -176,6 +176,23 @@ function clickneigh(id){
 
 }
 
+//controls highlighted onclick
+function transitmap(id){
+  var tag = document.getElementById(id);
+  //if not already clicked, highlight button and add layer
+    if (tag.style.backgroundColor=="papayawhip"){
+        tag.style.backgroundColor = "#f9f9f9"; 
+        map.removeLayer(transit);//getheat();
+    }
+    else{
+        tag.style.backgroundColor = "papayawhip";
+        transit.addTo(map);//getheat();
+    }
+
+}
+
+
+
 
 //controls highlighted onclick
 function transitmap(id){
