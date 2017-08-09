@@ -51,12 +51,13 @@ $.getJSON("./data/rodents.geojson",function(data){
 var neigh;
 var cam;
 var newton;
+var transit;
 
 $.getJSON("./data/cambridge.geojson",function(hoodData){
   cam = L.geoJson(hoodData, {
   //specifies styling for neighborhoods
     style: function(feature){
-    return { color: "#999", weight: 1, fillColor: "#ffffcc", fillOpacity: .4 };
+    return { color: "#999", weight: 1, fillColor: "#ffffcc", fillOpacity: .3 };
     },
     //adds popup of neighborhood name
     onEachFeature: function( feature, layer ){
@@ -69,11 +70,24 @@ $.getJSON("./data/newton.geojson",function(hoodData){
   newton = L.geoJson(hoodData, {
   //specifies styling for neighborhoods
     style: function(feature){
-    return { color: "#999", weight: 1, fillColor: "#ffffcc", fillOpacity: .4 };
+    return { color: "#999", weight: 1, fillColor: "#ffffcc", fillOpacity: .3 };
     },
     //adds popup of neighborhood name
     onEachFeature: function( feature, layer ){
       layer.bindPopup("<strong>" + "Ward " + feature.properties.Ward + "</strong><br/>"+ "Precinct " + feature.properties.Precinct)
+    }
+  }  );
+});
+
+$.getJSON("./data/subwaylines.json",function(hoodData){
+  transit = L.geoJson(hoodData, {
+  //specifies styling for neighborhoods
+    style: function(feature){
+    return { color: feature.properties.LINE, weight: 3, opacity: 0.8 };
+    },
+    //adds popup of neighborhood name
+    onEachFeature: function( feature, layer ){
+      layer.bindPopup("<strong>" + "Ward " + feature.id)
     }
   }  );
 });
@@ -95,7 +109,7 @@ $.getJSON("./data/neighborhoods.geojson",function(hoodData){
 		else fillColor = "#f7f7f7";  // no data
     //this is rat data so I'm just going to leave it here until we have
     //something more useful, and fill in one fill color for now
-		return { color: "#999", weight: 1, fillColor: "#ffffcc", fillOpacity: .4 };
+		return { color: "#999", weight: 1, fillColor: "#ffffcc", fillOpacity: .3 };
 		},
 		//adds popup of neighborhood name
     onEachFeature: function( feature, layer ){
@@ -163,4 +177,18 @@ function clickneigh(id){
 }
 
 
+//controls highlighted onclick
+function transitmap(id){
+  var tag = document.getElementById(id);
+  //if not already clicked, highlight button and add layer
+    if (tag.style.backgroundColor=="papayawhip"){
+        tag.style.backgroundColor = "#f9f9f9"; 
+        map.removeLayer(transit);//getheat();
+    }
+    else{
+        tag.style.backgroundColor = "papayawhip";
+        transit.addTo(map);//getheat();
+    }
+
+}
 
