@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <html>
 	<head>
-		<title> AQ Visualization </title>
+		<title> AQ in Boston </title>
 		<link rel="stylesheet" href="css/leaflet.css"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
@@ -20,7 +20,8 @@
 		<div id = "side_bar">				
 			<img src="img/AQ_blue.png" alt="logo" id="logo">
 			<div id = "info">
-				<button onclick="myTour()" class="dropbtn">Take A Tour</button>
+				<p> Using Mathematical Models to Predict Boston Air Quality. <a href=index.html>Learn More.</a></p>
+				<button onclick="myTour()" class="dropbtn">Take A Tour<span>We will be adding this functionality soon. Feel free to explore Advanced View!</span></button>
 				<div class="dropdown">
 					<button onclick="myFunction()" id = "adview" class="dropbtn">Advanced View</button>
 				    <div id="myDropdown" class="dropdown-content">
@@ -32,25 +33,26 @@
 								    <li class= "drop" id="d3" onclick = "dropclick('d3')"> <a href ="#">Particulate Matter 2.5</a></li>
 						  </ul></li>
 						</ul>
-						<ul> 
+						<!--<ul> 
 							<li class="program"><a href="#">Health Concerns</a>
 						  		<ul>
 								    <li  class= "drop" id="d4" onclick = "dropclick('d4')"><a href ="#">Respiratory</a></li>
 								    <li class= "drop" id="d5" onclick = "dropclick('d5')"><a href ="#">Cardiovascular</a></li>
 								    <li class= "drop" id="d6" onclick = "dropclick('d6')"><a href ="#">General</a></li>
 						  </ul></li>
-						</ul>
+						</ul> -->
 						<ul>
 							<li class="program"><a href="#">Layers</a>
 						  		<ul>
 								    <li class= "drop" id="d7" onclick = "transitmap('d7')"><a href ="#">Transit</a></li>
 								    <li class= "drop" id="d8" onclick = "clickneigh('d8')"><a href ="#">Counties</a></li>
-								    <li class= "drop" id="d9" onclick = "dropclick('d9')"><a href ="#">Weather</a></li>
+								    <!--<li class= "drop" id="d9" onclick = "dropclick('d9')"><a href ="#">Weather</a></li>-->
 						  </ul></li>
 						</ul>
-					    <li class = "program" id="d10" onclick = "dropclick('d10')"> <a href="#">Time Bar</a></li>
+					    <!--<li class = "program" id="d10" onclick = "dropclick('d10')"> <a href="#">Time Bar</a></li>
 					    <!-- triggers data download-->
-					    <li class = "program"> <a href="data/data_test.geojson" download> Download</a></li>
+					    <!--<li class = "program"> <a href="data/data_test.geojson" download> Download</a></li>-->
+					    <li class = "program"> <a href=https://github.com/onefishy/TRiCAM_BostonAQ/tree/gh-pages/data> See Our Data</a></li>
 				    </div>
 				</div>
 			</div>	

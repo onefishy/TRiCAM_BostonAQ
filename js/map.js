@@ -15,7 +15,7 @@ L.GridLayer.DebugCoords = L.GridLayer.extend({
     createTile: function (coords, done) {
     var tile = document.createElement('div');
     tile.innerHTML = [coords.x, coords.y, coords.z].join(', ');
-    tile.style.outline = '1px solid red';
+    tile.style.outline = '1px #777777';
 
     setTimeout(function () {
     done(null, tile);	// Syntax is 'done(error, tile)'
@@ -40,11 +40,28 @@ $.getJSON("./data/rodents.geojson",function(data){
     var locations = data.features.map(function(rat) {
         // the heatmap plugin wants an array of each location
       var location = rat.geometry.coordinates.reverse();
-        location.push(0.5);
+        location.push(0.6);
         return location; // e.g. [50.5, 30.5, 0.2], // lat, lng, intensity
       });
   heat = L.heatLayer(locations, { radius: 35 }); 
     });
+
+var heatt;
+$.getJSON("./data/boston_testing2.geojson",function(data){
+      //var locations is an array of coordinates
+    var locations = data.features.map(function(rat) {
+        // the heatmap plugin wants an array of each location
+        var location = rat.coords;
+        //location.push(0.5);
+        return location;
+       // e.g. [50.5, 30.5, 0.2], // lat, lng, intensity
+      });
+    L.heatLayer(locations, {radius: 25, max:9.96, gradient: {
+      0.0: 'blue',
+       0.5: 'lime',
+        1.0: 'red'}}); 
+    });
+
 
 //adds neighborhoods layer
 
@@ -61,7 +78,15 @@ $.getJSON("./data/cambridge.geojson",function(hoodData){
     },
     //adds popup of neighborhood name
     onEachFeature: function( feature, layer ){
-      layer.bindPopup( "<strong>" + feature.properties.NAME)// + "</strong><br/>" + heat.properties.density + " rats per square mile" )
+
+        layer.bindPopup("<strong>"+feature.properties.NAME);
+        layer.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        layer.on('mouseout', function (e) {
+            this.closePopup();
+        });
+      //layer.bindPopup( "<strong>" + feature.properties.NAME)// + "</strong><br/>" + heat.properties.density + " rats per square mile" )
     }
   }  );
 });
@@ -74,7 +99,14 @@ $.getJSON("./data/newton.geojson",function(hoodData){
     },
     //adds popup of neighborhood name
     onEachFeature: function( feature, layer ){
-      layer.bindPopup("<strong>" + "Ward " + feature.properties.Ward + "</strong><br/>"+ "Precinct " + feature.properties.Precinct)
+        layer.bindPopup("<strong>" + "Ward " + feature.properties.Ward + "</strong><br/>"+ "Precinct " + feature.properties.Precinct);
+        layer.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        layer.on('mouseout', function (e) {
+            this.closePopup();
+        });
+      //layer.bindPopup("<strong>" + "Ward " + feature.properties.Ward + "</strong><br/>"+ "Precinct " + feature.properties.Precinct)
     }
   }  );
 });
@@ -84,10 +116,6 @@ $.getJSON("./data/subwaylines.json",function(hoodData){
   //specifies styling for neighborhoods
     style: function(feature){
     return { color: feature.properties.LINE, weight: 3, opacity: 0.8 };
-    },
-    //adds popup of neighborhood name
-    onEachFeature: function( feature, layer ){
-      layer.bindPopup("<strong>" + "Ward " + feature.id)
     }
   }  );
 });
@@ -113,7 +141,14 @@ $.getJSON("./data/neighborhoods.geojson",function(hoodData){
 		},
 		//adds popup of neighborhood name
     onEachFeature: function( feature, layer ){
-      layer.bindPopup( "<strong>" + feature.properties.Name)// + "</strong><br/>" + heat.properties.density + " rats per square mile" )
+        layer.bindPopup("<strong>" + feature.properties.Name);
+        layer.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        layer.on('mouseout', function (e) {
+            this.closePopup();
+        });
+      //layer.bindPopup( "<strong>" + feature.properties.Name)// + "</strong><br/>" + heat.properties.density + " rats per square mile" )
     }
   }  );
 });
@@ -124,6 +159,7 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+function myTour(){button.bindPopup("We will be adding this functionality soon. Feel free to explore Advanced View for now!")}
 
 // $(".program").on('click',function () {
 //   $('li ul').toggle('');
@@ -175,23 +211,6 @@ function clickneigh(id){
     }
 
 }
-
-//controls highlighted onclick
-function transitmap(id){
-  var tag = document.getElementById(id);
-  //if not already clicked, highlight button and add layer
-    if (tag.style.backgroundColor=="papayawhip"){
-        tag.style.backgroundColor = "#f9f9f9"; 
-        map.removeLayer(transit);//getheat();
-    }
-    else{
-        tag.style.backgroundColor = "papayawhip";
-        transit.addTo(map);//getheat();
-    }
-
-}
-
-
 
 
 //controls highlighted onclick

@@ -1,3 +1,4 @@
+
 .body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
@@ -82,6 +83,11 @@
   top: 10px;
   position: relative; 
   z-index: 2;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 12px;
+  color: #656565;
+  background-color: #c7c7c7;
 }
 
 #logo {
@@ -114,13 +120,36 @@ button {
   padding: 12px;
   font-size: .8vw;
   font-weight: bold;
-  display: block;
 }
 
 button:hover {
   background-color: #add8e6
 }
 
+/*HOVER POPUP LINKS*/
+
+/*hoverpopups type 1*/
+
+#info { color: #000; background-color: #c7c7c7; }
+
+#info button span {
+  display: none;
+}
+
+#info button:hover span {
+  display: block;
+  position: absolute;
+  top: 27%;
+  right: 80%;
+  width: 80%;
+  margin: 0px;
+  padding: 10px;
+  color: #656565;
+  font-weight: normal;
+  background: white;
+  text-align: center;
+  border: 1px solid #666;
+}
 
 /* chart styling */
 .axis {font: 5px sans-serif;}
