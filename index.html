@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,12 +10,10 @@
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search resu...">
 
   <link rel="stylesheet" href="css/main.css">
-
 </head>
 
 
   <body>
-
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <article class="post">
@@ -59,7 +57,7 @@
 <p><a name="Abstract"></a></p>
 <h3 id="i-abstract">I. Abstract</h3>
 <p>Exposure to pollutants such as NO2, SO2, and PM2.5 are a significant concern, especially for those living in large cities. However, most major cities have five or fewer
-active air quality sensors. Various studies have shown that geostatistical models using traffic count, elevation, and land cover as variables can predict pollutant levels with high accuracy. However, collecting training data containing sufficient geospatial variation often involves large scale deployment of sensors over the area of interest. In this  study, we trained geospatial and spatio-temproal models for three EPA criteria pollutants - NO2, SO2, and PM2:5 - using data collected from 398 counties across the US and applied the models to produce intra-urban pollution concentration levels for a 107.495 square mile region covering the Greater Boston area. The performance of our geospatial model (Land Use Regression) and spatio-temporal model (Guassian Process) were found to be comparable of similar models in literature. Our study addresses also the public health challenge of effectively and meaningfully communicating scientific findings in environmental science to the general public. Specifically, we designed an interactive web
+active air quality sensors. Various studies have shown that geostatistical models using traffic count, elevation, and land cover as variables can predict pollutant levels with high accuracy. However, collecting training data containing sufficient geospatial variation often involves large scale deployment of sensors over the area of interest. In this  study, we trained geospatial and spatio-temproal models for three EPA criteria pollutants - NO2, SO2, and PM2.5 - using data collected from 398 counties across the US and applied the models to produce intra-urban pollution concentration levels for a 107.495 square mile region covering the Greater Boston area. The performance of our geospatial model (Land Use Regression) and spatio-temporal model (Guassian Process) were found to be comparable of similar models in literature. Our study addresses also the public health challenge of effectively and meaningfully communicating scientific findings in environmental science to the general public. Specifically, we designed an interactive web
 interface for visualizing our Boston air pollution predictions. This interface serves as a proof-of-concept for an accessible, educational, and scientific tool.</p>
 
 <p><a name="Intro"></a></p>
@@ -72,7 +70,14 @@ interface for visualizing our Boston air pollution predictions. This interface s
 
 <p><a name="Problem"></a></p>
 <h3 id="iii-problem-statement-and-methods">III. Problem Statement and Methods</h3>
+
+<figure id="sensors">
+<img src="img/sensors.jpg">
+<figcaption style="">Fig 1. - Locations of EPA Air Quality Sensors in Greater Boston </figcaption>
+</figure>
+
 <p>There are two main challenges that motivate this project. Firstly, there are four Environmental Protection Agency (EPA) air quality sensors located in the Greater Boston area that are responsible for recording all air quality data for all the significant pollutants in the entire city (Figure 1). As large portions of the city are outside the range of existing sensors, there are insufficient EPA sensors to provide an adequate assessment of intra-urban spatial variations in air quality conditions. Since the installation of new sensors to provide more widespread coverage of land is a difficult task, our main objective is to implement statistical modeling techniques to model air pollution in areas that existing sensors do not cover. The independent variables impacting pollutant concentration that we will consider include land use and weather. </p>
+
 
 <p>Another challenge that this project addresses is the difficulty of making scientific data and findings accessible to the general public, especially when such information
 affects the health and welfare of urban residents. While environmental monitoring organizations like the EPA makes all of its air quality data publicly available, this data consists of numerical databases or scientific reports. In these formats, the air quality information can be of limited use to laymen with little scientific training. Furthermore, air pollution data are often collected and reported by agencies for regulation purposes, not for health or educational purposes, thus there is a further gap to be filled connecting the results of air quality monitoring to public health concerns. A major goal of this project is to design an easy-to-read, interactive interface which provides a more intuitive visualization of Boston’s air quality. The interface will provide users with a way to understand air quality conditions on both a city wide and granular level. Our design for the interface aims to communicate the results of our statistical models meaningfully to anyone who uses the interface. In the end, we hope that our interface serves as an educational tool for the public, as a tool for scientists, and potentially as an aid in city policy and zoning decisions. </p>
@@ -80,21 +85,41 @@ affects the health and welfare of urban residents. While environmental monitorin
 <p><a name="Procedures"></a></p>
 <h3 id="iv-procedures">IV. Procedures and Methods </h3>
 <strong>A. Data Collection </strong>
-<!--INSERT IMAGE OF MAP HERE-->
-<p>In our models, we include static geospatial data as well as dynamic data. Geospatial data consists of land use, topography and bus routes while dynamic data consists of traffic and weather. Air quality from the four Boston sensor sites were collected hourly over several weeks. Our land use data was downloaded as GIS shapefiles, wherein the areas used for the training, testing and forecasting are covered by polygons (and multigons - nested polygons) each described by a single land use type. Average daily traffic volume and real-time traffic volume data was downloaded by state, these are point-wise estimates, i.e. reported for a network of sensor locations across each state. Elevations (sea level) are provided by Google Maps. Weather data was provided by the EPA for each sensor location. In addition, real-time weather data for stations throughout Boston was collected for a period of one week.</p>
+
+
+<p>In our models, we include static geospatial data as well as dynamic data. Geospatial data consists of land use, topography and bus routes while dynamic data consists of traffic and weather.
+
+<figure id="datasources">
+<img src="img/table1.png">
+<figcaption>Table 1. - Data sources and formats</figcaption>
+</figure> 
+Air quality from the four Boston sensor sites were collected hourly over several weeks. Our land use data was downloaded as GIS shapefiles, wherein the areas used for the training, testing and forecasting are covered by polygons (and multigons - nested polygons) each described by a single land use type. Average daily traffic volume and real-time traffic volume data was downloaded by state as point-wise estimates, i.e. reported for a network of sensor locations across each state. Elevations (sea level) are provided by Google Maps. Weather data was provided by the EPA for each sensor location. In addition, real-time weather data for stations throughout Boston was collected for a period of one week.</p>
+
 
 </p>The training data consists of the above data collected from 398 counties throughout 16 US states, the majority of which where located on the East Coast. The trained models were applied to a 107.495 square mile region overing Greater Boston. This area was divided into a 50 by 50 grid (Figure 3). The grid cells are uniformly sized squares with a length of approximately one sixteenth of a square mile. The process in which we extracted geospatial predictors per grid cell is described in greater detail in the below section. All data sources and formats are shown in Figure I. </p>
 
 
 <strong>B. Data Rastering </strong>
-<!--Insert prop bar graph and grid map here-->
+
 <p>
-Within each grid cell of our 50x50 Boston grid, we uniformly sampled 100 random points. Each point is assigned a land use type corresponding to the land use polygon within which it fell. The land use types of the sampled points within each cell are then categorized into 11 land use categories and totaled for each category producing a land use porportion or percentage break down for each grid cell. The distribution of land use types in our data is visualized in Figure 2. Next, the elevation is measured at each sampled point and the elevations are averaged to produce an average elevation per grid cell. Then, counts from traffic sensors falling within each grid are averaged producing a single indicator per cell. Finally, for the centroid of each cell, the data from the nearest five weather data are averaged.</p>
+<figure id="lur">
+<img src="img/LUR.png">
+<figcaption>Fig 2. - Distribution of Land Use in Site Data </figcaption>
+</figure>
+Within each grid cell of our 50x50 Boston grid, we uniformly sampled 100 random points. Each point is assigned a land use type corresponding to the land use polygon within which it fell. The land use types of the sampled points within each cell are then categorized into 11 land use categories and totaled for each category producing a land use proportion or percentage break down for each grid cell. The distribution of land use types in our data is visualized in Figure 2. Next, the elevation is measured at each sampled point and the elevations are averaged to produce an average elevation per grid cell. Then, counts from traffic sensors falling within each grid are averaged producing a single indicator per cell. Finally, for the centroid of each cell, the data from the nearest five weather data are averaged.</p>
+
 
 <p>In the training set, 100 random points were uniformly sampled from a 1/16 squared mile grid centered at each EPA sensor site. Geospatial descriptors were extracted for each site through the same process as described above, with the exception that weather data was taken from EPA provided yearly averages rather than real-time data and for sites where this data was missing, we imputed the missing value with the average value for the state to which the site belonged. The land use data used to characterize the EPA sites in training set were collected by the US Geological Survey during the period from 1970 to 1980.</p>
 
+<figure id="grid">
+<img src="img/grid.jpg">
+<figcaption>Fig 3. - Visual representation of Greater Boston Area grid system</figcaption>
+</figure>
+
 <p>The training data consists of data from 1,948 EPA monitoring sites in counties across 16 US states. The data was collected and averaged over the year of 1980. Because each site monitors different conditions and pollutants, we created subset datasets for each pollutant. We first subset out the sites that monitored our pollutants of interest: NO2, SO2 and PM2.5. The component PM2.5 readings (Silicon PM2.5, Titanium PM2.5, etc) were added for each site to obtain an overall PM2.5 reading for each site.
 The training set contains PM2.5 had 1949 observations, 311 NO2 and 585 SO2 observations. </p>
+
+
 
 <strong>C. Computational Resources</strong>
 <p> Our primary computing environment is Jupyter Notebook, using an IPython3 kernel. For statistical modeling we used SciPy and scikit-learn libraries, and we used Matplotlib for visualization. For manipulating GIS data, we use the Shapely and PyShp libraries. The web application is developed in D3, Leaflet, CSS, and HTML. Amazon Web Services is used for large scale data collection and processing. Finally, GitHub is used for project collaboration and organization. </p>
@@ -115,7 +140,9 @@ Boston Area. In addition, We performed variable selection
 and analysis to reason about the impact of dynamic variables
 on the concentration of atmospheric pollutants.
 The form of our LUR models is as follows
-y = 0 + 1X1 + 2X2 + ::: + nXn + ;
+<figure id="lureq">
+<img src="img/LUReq.png">
+</figure>
 where the dependent variable y is the pollutant concentration
 of a given area; and X1...Xn represent the set or
 subset of geospatial predictor variables. Prior to variable
@@ -131,6 +158,18 @@ our pollutants of interest.
 </p>
 
 <strong> B. Variable Selection and Cross Validation for LUR </strong>
+<figure class="varselect">
+<img src="img/varselectpm.png">
+<figcaption>Table 2. - Variable Selection for PM2.5</figcaption>
+</figure>
+<figure class="varselect">
+<img src="img/varselectno2.png">
+<figcaption>Table 3. - Variable Selection for NO2</figcaption>
+</figure>
+<figure class="varselect">
+<img src="img/varselectso2.png">
+<figcaption>Table 4. - Variable Selection for SO2</figcaption>
+</figure>
 <p>Three different metrics were used for variable selection: p-value,
 R2 and AIC and the results compared. For R2 variable
 selection, 8-fold cross validation was implemented. Using
@@ -149,6 +188,11 @@ with geospatial variations.</p>
 <p>Using results from our variable selection, we analyzed
 predictors that appear most often in the final subsets (Figure
 4).</p>
+
+<figure>
+<img src="img/lutable.jpg">
+<figcaption>Fig 4. - Land use type frequency in variable selection</figcaption>
+</figure>
 
 <p>Since a primary source of all three pollutants is the
 combustion of fossil fuel, we expected to see certain land use
@@ -174,24 +218,24 @@ Gaussian Process model is a statistical model that uses a nonparametric
 representation of the underlying function relating
 predictor and response. Specifically, we assume that any
 subset of our pollution concentration levels (both observed,
-y, and unknown, y) have a joint Gaussian distribution,
-wherein the covariance matrix  is determined by some metric
+y, and unknown, y*) have a joint Gaussian distribution,
+<figure id="g1">
+<img src="img/gaussian1.png">
+</figure>
+wherein the covariance matrix is determined by some metric
 of similarity of the geospatial and dynamic characteristics
 of the locations of the corresponding observation sites. That
 is, each entry in the covariance matrix is computed by a
 function in terms of the predictors, this is the kernel function.
 In this study, the standard radial basis function (RBF) kernel
 is used:
-K(x; x*) = 2
-f exp(
-􀀀(x 􀀀 x*)2
-2`2 ) + 2n
-(x; x*)
-,
-where 2
-f is the amplitude of the air quality approximation,
-` is the length scale, and 2n
-is the noise variance. In our
+<figure id="g2">
+<img src="img/gaussian2.png">
+</figure>
+<!--,
+where is sigma_f the amplitude of the air quality approximation,
+<i>l</i> is the length scale, and sigma_n
+is the noise variance.--> In our
 models, we used a constant noise level of 0.001.
 <p>Lastly, our Gaussian Process model builds on the results
 of our LUR models by incorporating the predicted pollution
@@ -200,8 +244,20 @@ The evaluation of our Gaussian Process model are detailed
 in Table V.</p>
 <p>The temporal dependence of the pollution levels found
 by our Gaussian Process models are visualized in Figures 5
-through 7</p>
+through 7.</p>
 
+<figure>
+<img src="img/PMGauss.png">
+<figcaption>Fig 5. - Gaussian fit for PM2.5</figcaption>
+</figure>
+<figure>
+<img src="img/NO2Gauss.png">
+<figcaption>Fig 6. - Gaussian fit for NO2</figcaption>
+</figure>
+<figure>
+<img src="img/SO2Gauss.png">
+<figcaption>Fig 7. - Gaussian fit for SO2</figcaption>
+</figure>
 
 <p><a name="Analysis"></a></p>
 <h3 id="vi-analysis">VI. Analysis</h3>
@@ -357,7 +413,7 @@ Map. Web. 12 July 2017. </p>
 <h3 id="x-code-and-data">X. Code and Data</h3>
 <p><a href="https://github.com/onefishy/TRiCAM_BostonAQ">Code Repository</a></p>
 <p><a href="boston_aq.html">Air Quality Viz</a></p>-->
-<p><a href="BostonAQ_final_report.pdf">Report (PDF)</a></p>
+<p><a href="BostonAQ_final_report.pdf" target="blank_">Report (PDF)</a></p>
 
   </div>
 

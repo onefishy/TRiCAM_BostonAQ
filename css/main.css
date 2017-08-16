@@ -13,7 +13,61 @@ img { max-width: 100%; vertical-align: middle; }
 /** Figures */
 figure > img { display: block; }
 
-figcaption { font-size: 14px; }
+#sensors {
+	width:70%;
+	height:60%;
+	float:left;
+	margin: 4px 20px 12px 0px;
+}
+
+#lur {
+	width:60%;
+	height:60%;
+	float:left;
+	margin: 4px 20px 12px 0px;
+}
+
+#datasources {
+	width:55%;
+	height:40%;
+	float:right;
+	margin: 0px 20px 12px 0px;
+}
+
+#grid {
+	width:55%;
+	height:40%;
+	float: right;
+	margin: 0px 20px 12px 5px;
+}
+
+.varselect {
+	width:55%;
+	height:40%;
+	float: left;
+	margin: 4px 20px 12px 0px;
+}
+
+#lureq {
+	width:55%;
+	height:40%;
+}
+
+#g1 {
+	width:25%;
+	height:25%;
+}
+
+#g2 {
+	width:55%;
+	height:55%;
+	margin: 5px 20px 12px 0px;
+}
+
+
+
+figcaption { font-size: 12px; 
+			 text-align: center;}
 
 /** Lists */
 ul, ol { margin-left: 30px; }
