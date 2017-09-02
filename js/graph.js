@@ -39,7 +39,7 @@
 				          "translate(" + margin.left + "," + margin.top + ")");
 
 				// Get the data
-				d3.csv("data/data2.csv", function(error, data) {
+				d3.csv("./data/data2.csv", function(error, data) {
 				  if (error) throw error;
 
 				  // format the data
