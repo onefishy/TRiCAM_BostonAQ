@@ -57,7 +57,7 @@
 <p><a name="Abstract"></a></p>
 <h3 id="i-abstract">I. Abstract</h3>
 <p>Exposure to pollutants such as NO2, SO2, and PM2.5 are a significant concern, especially for those living in large cities. However, most major cities have five or fewer
-active air quality sensors. Various studies have shown that geostatistical models using traffic count, elevation, and land cover as variables can predict pollutant levels with high accuracy. However, collecting training data containing sufficient geospatial variation often involves large scale deployment of sensors over the area of interest. In this  study, we trained geospatial and spatio-temproal models for three EPA criteria pollutants - NO2, SO2, and PM2.5 - using data collected from 398 counties across the US and applied the models to produce intra-urban pollution concentration levels for a 107.495 square mile region covering the Greater Boston area. The performance of our geospatial model (Land Use Regression) and spatio-temporal model (Guassian Process) were found to be comparable of similar models in literature. Our study addresses also the public health challenge of effectively and meaningfully communicating scientific findings in environmental science to the general public. Specifically, we designed an interactive web
+active air quality sensors. Various studies have shown that geostatistical models using traffic count, elevation, and land cover as variables can predict pollutant levels with high accuracy. Collecting training data containing sufficient geospatial variation often involves large scale deployment of sensors over the area of interest. In this study, we trained geospatial and spatio-temproal models for three EPA criteria pollutants - NO2, SO2, and PM2.5 - using data collected from 398 counties across the US and applied the models to produce intra-urban pollution concentration levels for a 107.495 square mile region covering the Greater Boston area. The performance of our geospatial model (Land Use Regression) and spatio-temporal model (Guassian Process) were comparable of similar models in literature. Our study also addresses the public health challenge of effectively and meaningfully communicating scientific findings in environmental science to the general public. Specifically, we designed an interactive web
 interface for visualizing our Boston air pollution predictions. This interface serves as a proof-of-concept for an accessible, educational, and scientific tool.</p>
 
 <p><a name="Intro"></a></p>
@@ -92,7 +92,7 @@ affects the health and welfare of urban residents. While environmental monitorin
 <figure id="datasources">
 <img src="img/table1.JPG">
 <figcaption>Table 1. - Data sources and formats</figcaption>
-</figure> 
+</figure>
 Air quality from the four Boston sensor sites were collected hourly over several weeks. Our land use data was downloaded as GIS shapefiles, wherein the areas used for the training, testing and forecasting are covered by polygons (and multigons - nested polygons) each described by a single land use type. Average daily traffic volume and real-time traffic volume data was downloaded by state as point-wise estimates, i.e. reported for a network of sensor locations across each state. Elevations (sea level) are provided by Google Maps. Weather data was provided by the EPA for each sensor location. In addition, real-time weather data for stations throughout Boston was collected for a period of one week.</p>
 
 
@@ -313,7 +313,7 @@ time when specific cells in the grid are hovered over. Lastly,
 we used D3.js, a Javascript library, to attach an interactive
 map that is drag-able and zoom-able, implement on-click
 effects, and create a interactive drop down
-menu on the advanced view button. 
+menu on the advanced view button.
 Further steps will include adding more data
 layers, visualizing pollutant concentrations, implementing a trend line for Boston as a whole, and adding an interactive tour for new users. </p>
 
